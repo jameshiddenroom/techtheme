@@ -151,7 +151,7 @@ div.searchlight-results-wrapper {
 	background: linear-gradient(to bottom,  #ffffff 1%,#f9f9f9 40%,#eeeeee 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
 }
-/*footer::  This style controls the text you type under global footer. Merchants usually use to add security logos, credit card logos, privacy notes, etc.*/		
+/*footer:: This style controls the text you type under global footer. Merchants usually use to add security logos, credit card logos, privacy notes, etc.*/		
 .footer {
 	font-size: 10px;
 	color: #000;
@@ -188,7 +188,7 @@ div.searchlight-results-wrapper {
 	font-size: 16px;
 }
 
-/*footerLinks::  Controls the way the Footer Links display in the Global Footer.*/
+/*footerLinks:: Controls the way the Footer Links display in the Global Footer.*/
 .footer a, .footer a:visited, .footer a:hover, .footer a:visited:hover {
 	font-size: 10px;
 	color: #a3a3a3;
@@ -730,7 +730,7 @@ td {
     text-align: right;
 }
 .top-menu {
-    background: #53a9ec;
+    background: #5E821E;
     padding: 10px 0;
 	transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -901,7 +901,7 @@ li.m-search {
 header {
 	position: relative;
 	height: 130px;
-	background: #2d83d5;
+	background: #006400;
 }
 header .wrapper {
 	height: 130px;
@@ -1307,13 +1307,14 @@ ul#desktopMenu {
 	margin: 0;
     padding: 0;
 	list-style: none;
-	text-align: left;
+	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px!important;
 	font-weight: 800;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+display: inline;
 }
 ul#desktopMenu li {
 	display: inline-block;
@@ -1323,7 +1324,13 @@ ul#desktopMenu li {
 	line-height: 50px;
 }
 ul#desktopMenu li:hover {
+background: #809980;
+border-bottom: 1px solid #262E26;
+	color: #fff;
 	font-size: 14px!important;
+}
+ul#desktopMenu li:hover a {
+	color: #fff;
 }
 ul#desktopMenu li a {
 	display: block;
@@ -1334,22 +1341,19 @@ ul#desktopMenu li a {
 	color: #000;
 }
 ul#desktopMenu li a:hover {
-	color: #fff;
-	background: #202020;
 	text-decoration: none;
-	font-size: 18px!important;
 }
 ul#desktopMenu li ul {
 	display: none;
 	position: absolute;
 	top: 50px;
 	z-index: 10;
-	left: 81%;
-	background: #53a9ec;
+	left: 0px;
+	background: #809980;
 	text-align: left;
-	padding: 10px;
-	margin-left: -110px;
-	width: 250px;
+	padding:10px 0 10px 0;
+	margin-left: 0px;
+	width: 200px;
 }
 ul#desktopMenu li:hover ul {
 	display: block;
@@ -1363,19 +1367,22 @@ ul#desktopMenu li ul li a {
 	border: none;
 }
 ul#desktopMenu li ul li a:hover {
-	color: #333;
+	color: #fff;
+background: #B3C2B3;
 	border: none;
 }
 ul#desktopMenu li ul li {
 	margin: 0;
-	padding: 0;
+	padding: 0 0 0 5px;
 	float: left;
 	display: block;
 	width: 100%;
 	border: none;
+height: 30px;
+line-height: 30px;
 }
 ul#desktopMenu li ul li:hover {
-	background: #53a9ec;
+	background: #B3C2B3;
 	border: none;
 }
 .down {
@@ -1886,7 +1893,7 @@ body {
     .social-icons, .ftr-col.col2 {display: none; visibility: hidden;}
     #leftBar {display: none; visibility: hidden;}
     #mainContainer {width: auto; margin: auto;}
-    .greeting {display: none; visibility:  hidden;}
+    .greeting {display: none; visibility: hidden;}
     .linkrow {display: none; visibility: hidden;}
 }
 

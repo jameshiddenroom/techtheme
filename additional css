@@ -1086,7 +1086,6 @@ aside .module .div {
 }
 #mainContent {
 	float: left;
-	width: 100%;
 }
 footer {
 	/*margin-top: 50px; Hide */

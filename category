@@ -1,11 +1,9 @@
 <section id="category">
   <form action="view_category.asp?cat=[catid]" method="post" name="frmsortby" id="frmsortby">
     <!--START: BODY_HEADER-->
-    <div class="breadcrumbs">[CATEGORY_FULLLINE]</div>
     <!--END: BODY_HEADER-->
-    <h1 class="page_headers">[categoryname]</h1>
     <!--START: CATEGORY_HEADER-->
-    <div class="category-header" id="categoryHeader">[CONTENT]</div>
+    <div id="categoryHeader">[CONTENT]</div>
     <!--END: CATEGORY_HEADER--> 
     <!--START: SUB_CATEGORIES-->
     <div id="subcategoriesBlock">
@@ -422,4 +420,5 @@
         }
     </script>
 <!--END: dropimage_widget_script-->
+
 <script type="text/javascript" src="/assets/categories.js"></script>

@@ -294,7 +294,7 @@ A:hover  {
 /*******************************************************/
 .product-item .name {height: auto!important;}
 .product-item img {position: relative; top: 0;}
-#itemsBlock .products-header {border-bottom: 1px solid #a3a3a3;}
+#itemsBlock .products-header {border-bottom: 1px solid #a3a3a3; width: 755px;}
 
 .secondary-left {width: 50%!important; height: 50%; float: left;}
 .img.secondary-left a img {width: 100%;}
@@ -1086,6 +1086,7 @@ aside .module .div {
 }
 #mainContent {
 	float: left;
+	width: 100%;
 }
 footer {
 	/*margin-top: 50px; Hide */
@@ -1406,6 +1407,10 @@ ul#desktopMenu li ul li:hover {
 	margin-right: 7px;
 	font-weight: bolder;
 	color: #AAA;
+}
+
+.products-header .hidden-mobile {
+  text-rendering:auto;
 }
 
 /*	Responsive Navigation Menu

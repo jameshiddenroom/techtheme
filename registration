@@ -22,13 +22,19 @@
       <div class="loginField">
         <label for="email">[CustomerInfo_email]:</label>
         <input type="text" size="25" name="email" maxlength="50" tabindex="1" class="txtBoxStyle" />
-        <!--START: emailrequired--> 
+        
+	<!--START: emailrequired--> 
         <!--START: req_email--> 
         <script type="text/javascript">emailReq = 1;</script> 
         <div class="error-img"><img src="assets/templates/common/images/error2.gif" width="12" height="12" alt="" /></div> 
         <!--END: req_email--> 
         <!--END: emailrequired-->
         <div class="clear"></div>
+      </div>
+      <div class="loginField">
+	<label for="email2">Confirm email:</label>
+        <input type="text" size="25" name="email2" maxlength="50" tabindex="1" class="txtBoxStyle" />
+	<div class="clear"></div>
       </div>
       <div class="loginField">
         <label for="pass">[CustomerInfo_password]:</label>
@@ -41,6 +47,12 @@
         <!--END: passwordrequired-->
         <div class="clear"></div>
       </div>
+      <div class="loginField">
+	<label for="pass2">Confirm Password:</label>
+        <input type="password" size="12" name="pass2" maxlength="16" tabindex="2" class="txtBoxStyle"  />
+	<div class="clear"></div>
+      </div>
+
       <!--START: StrongPasswordBar-->
       <div class="loginField">
         <div class="strong-pass-bar" style="background-image: linear-gradient(to left, #86e01e 0%, #f63a0f 100%);">
@@ -238,6 +250,8 @@
                 strMsg += " - Please enter a valid [CustomerInfo_email*script].\n";
             if (objForm.email.value.length > 50)
                 strMsg += " - Max length for [CustomerInfo_email*script] is 50.\n";
+            if (objForm.email.value != objForm.email2.value) 
+                strMsg += " - Email addresses do not match\n";
         }
 
         if (passwordReq == 1) {
@@ -249,6 +263,8 @@
                 strMsg += " - Max length for [CustomerInfo_password*script] is 16.\n";
             else if (!objForm.pass.value.match(/(?=^.{8,16}$)(?=.*\d)(?=.*[A-Z])(?=.*[a-z]).*$/) && '[verifystrongpassword]' == '1')
                 strMsg += " - [CustomerInfo_password_policy*script] does not match the password policy.\n";
+            if (objForm.pass.value != objForm.pass2.value) 
+                strMsg += " - Passwords do not match\n";
         }
 
         if (objForm.shipping_firstname.value.trim() == "")

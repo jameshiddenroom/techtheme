@@ -198,7 +198,7 @@
 	  <div id="mediaContainer">
 		<div id="mediaBlock"> 
 		  <!--START: image1-->
-		  <div class="main-image"><a href="[image1]" class="[3dzoom_class]" id="listing_main_image_link" rel="disable-zoom: true; disable-expand: true;"><img itemprop="image" src="thumbnail.asp?file=[image1]&maxx=[image_medium_w]&maxy=0" align="middle" id="large" name="large" alt="[name]" /></a>
+		  <div class="main-image"><img itemprop="image" src="thumbnail.asp?file=[image1]&maxx=[image_medium_w]&maxy=0" align="middle" id="large" name="large" alt="[name]" />
 			<div name="imagecaptiont" title="[imagecaption1]" id="imagecaptiont" class="item">[imagecaption1]</div>
 		  </div>
 		  <!--END: image1--> 
@@ -363,7 +363,7 @@
 	  <div class="clear"></div>
 	  <!--START: pricing-->
 	  <div class="pricingBlock" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-		<link itemprop="availability" href="http://schema.org/[availability_snippet]" />
+		<link itemprop="availability" href="http://schema.org/[availability_itemprop]" />
 		<h3 class="hidden">[product_Header-price]</h3>
 		<div class="clear"></div>
 		<!--START: price2-->

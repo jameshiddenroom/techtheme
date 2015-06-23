@@ -126,12 +126,12 @@ div.searchlight-results-wrapper {
 
 /*menu-headers:: Controls the way the menu titles look. For example: Categories, Browse By Price, Top Sellers, etc.*/ 
 .menu-headers {
-	-webkit-border-top-left-radius: 5px;
-	-webkit-border-top-right-radius: 5px;
-	-moz-border-radius-topleft: 5px;
-	-moz-border-radius-topright: 5px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 	border-bottom: 1px solid #e8e8e8;
     color: #000!important;   
 	font-size: 16px;
@@ -292,7 +292,7 @@ A:hover  {
 /*******************************************************/
 /*          STYLES USED THROUGHTOUT THE WEBSITE        */
 /*******************************************************/
-.product-item .name {height: auto!important;}
+
 .product-item img {position: relative; top: 0;}
 #itemsBlock .products-header {border-bottom: 1px solid #a3a3a3; width: 755px;}
 
@@ -683,7 +683,7 @@ td {
 	display: block;
 	width: 100%; 
 	margin: 0 auto;
-	background: #fff;
+	background: #fbfbfb;
 }
 .wrapper {
 	width: 980px;
@@ -730,7 +730,7 @@ td {
     text-align: right;
 }
 .top-menu {
-    background: #53a9ec;
+    background: #000;
     padding: 10px 0;
 	transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -901,7 +901,7 @@ li.m-search {
 header {
 	position: relative;
 	height: 130px;
-	background: #2D83D5;
+	background: #2d83d5;
 }
 header .wrapper {
 	height: 130px;
@@ -956,6 +956,7 @@ nav#catNavMenu {
 	margin: 0;
 	clear: both;
 	background: #f2f2f2;
+text-align: center;
 }
 aside {
 	float: left;
@@ -1055,12 +1056,13 @@ aside .module .div {
 }
 #modNewReleases, #modManufacturer, #modPrice, #modTopSellers, #modNewsletter, #modMyCats {
 	border: 1px solid #e8e8e8;
-	-webkit-border-top-left-radius: 5px;
-	-webkit-border-top-right-radius: 5px;
-	-moz-border-radius-topleft: 5px;
-	-moz-border-radius-topright: 5px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+background: #fff;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
 #modNewsletter {
 	min-height: 140px;
@@ -1340,8 +1342,7 @@ ul#desktopMenu li {
 	line-height: 50px;
 }
 ul#desktopMenu li:hover {
-background: #809980;
-border-bottom: 1px solid #262E26;
+background: #000;
 	color: #fff;
 	font-size: 14px!important;
 }
@@ -1365,7 +1366,7 @@ ul#desktopMenu li ul {
 	top: 50px;
 	z-index: 10;
 	left: 0px;
-	background: #809980;
+	background: #000;
 	text-align: left;
 	padding:10px 0 10px 0;
 	margin-left: 0px;
@@ -1411,6 +1412,76 @@ ul#desktopMenu li ul li:hover {
 
 .products-header .hidden-mobile {
   text-rendering:auto;
+}
+
+.retailprice {
+text-decoration: line-through;
+color: #FF0000;
+font-weight: normal;
+}
+
+.product-item {
+background: #fff;
+border: 1px solid #e8e8e8;
+padding: 5px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.product-item .name {
+text-align: center;
+min-height: 100px;
+margin: 0;
+}
+
+.product-item .name A {
+font-weight: bold;
+font-size: 15px;
+color: #666;
+}
+
+.product-item .size {
+font-size: 15px;
+color: #666;
+}
+
+.product-item .price {
+text-align: center;
+font-size: 19px;
+font-weight: 300;
+color: #666;
+padding-top: 8px;
+}
+
+.product-item .retailprice {
+font-size: 14px;
+}
+
+.product-item .action {
+text-align: center;
+}
+
+.product-item .action A {
+color: #666;
+}
+
+.primary {
+padding-top: 20px;
+}
+
+.secondary {
+padding-top: 20px;
+}
+
+.secondary .info {
+padding-right: 10px;
+font-size: 13.5px;
+color: #222222;
+}
+
+.loginField label {
+  width: 140px;
 }
 
 /*	Responsive Navigation Menu

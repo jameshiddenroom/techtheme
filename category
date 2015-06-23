@@ -1,32 +1,13 @@
 <section id="category">
   <form action="view_category.asp?cat=[catid]" method="post" name="frmsortby" id="frmsortby">
     <!--START: BODY_HEADER-->
+    <div class="breadcrumbs">[CATEGORY_FULLLINE]</div>
     <!--END: BODY_HEADER-->
+    <h1 class="page_headers">[categoryname]</h1>
     <!--START: CATEGORY_HEADER-->
-    <div id="categoryHeader">[CONTENT]</div>
+    <div class="category-header" id="categoryHeader">[CONTENT]</div>
     <!--END: CATEGORY_HEADER--> 
-    <!--START: SUB_CATEGORIES-->
-    <div id="subcategoriesBlock">
-        <div class="titles">[category_Header-subcategories]</div>
-        <div class="sub-categories-format">
-        <!--START: SUB_CATEGORIES_FORMAT-->
-        <li>
-        <div class="sub-categories">
-              <a href="view_category.asp?cat=[CATID]">
-              <!--START: SUB_CATEGORY_IMAGE-->
-              <span class="img"><img src="[SUB_CATEGORY_IMAGE]" alt="[SUB_CATEGORY_NAME]" /></span>
-              <!--END: SUB_CATEGORY_IMAGE--> 
-              <!--START: SUB_CATEGORY_NAME-->
-              <span class="name">[SUB_CATEGORY_NAME]</span>
-              <!--START: SUB_CATEGORY_NAME--></a>
-              <div class="desc">[SUB_CATEGORY_DESCRIPTION]</div>
-            </div>
-        </li>
-        <!--END: SUB_CATEGORIES_FORMAT-->
-        </div>
-    </div>
-        <div class="clear"></div>
-    <!--END: SUB_CATEGORIES--> 
+
     <!--START: FEATURE_MENU-->
     <div id="featureBlock">
       <div class="titles">[category_Header-specials]</div>
@@ -34,26 +15,33 @@
       <!--START: FEATURE_ITEM_TEMPLATE_0-->
           <div class="product-item item-template-0 alternative">
             <div class="img"><a href="product.asp?itemid=[catalogid]"><img src="[THUMBNAIL]" alt="[name]" id="qv_[catalogid]" /></a></div>
-            <div class="name"><a href="product.asp?itemid=[catalogid]">[name]</a></div>
-            <div class="stars">
+            <div class="name"><img src="/assets/images/feature.png"><a href="product.asp?itemid=[catalogid]">[name]</a>
+		<div class="size">[extra_field_3]</div>
+		<div class="price">
+		<!--START: price2-->
+		<div class="retailprice">Normal Price: [price2]</div>
+		<!--END: price2-->
+		<!--START: ITEMPRICE--> 
+		<span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE]
+		<!--END: ITEMPRICE--> 
+		<!--START: SALEPRICE-->
+		<del class="price2">[ITEMPRICE]&nbsp;</del>
+		<span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE]
+		<div class="on-sale">[product_sale]</div>
+		<!--END: SALEPRICE-->
+		<!--START: product_availability--><div class="status">[availability] </div><!--END: product_availability--><!--START: freeshippingblock-->[freeshipping]<!--END: freeshippingblock-->
+		</div>
+            </div>
             <!--START: product_review--> 
+            <div class="stars">
             <!--START: product_review_average-->
                 <img src="assets/templates/common-html5/images/star[review_average].png" alt="Average Rating" /><span>([review_count])</span>
                 <div class="clear"></div>
             <!--END: product_review_average--> 
-            <!--END: product_review-->
             </div>
-            <div class="price"><!--START: ITEMPRICE--> 
-            <span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE]
-            <!--END: ITEMPRICE--> 
-            <!--START: SALEPRICE-->
-            <del class="price2">[ITEMPRICE]&nbsp;</del>
-            <span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE]
-            <div class="on-sale">[product_sale]</div>
-            <!--END: SALEPRICE--></div>
-            <div class="status"><!--START: product_availability-->[availability] <!--END: product_availability--><!--START: freeshippingblock-->[freeshipping]<!--END: freeshippingblock--></div>
+            <!--END: product_review-->
             <div class="action">
-                <input type="button" value="[category_buyitlink]" onclick="window.location = 'add_cart.asp?quick=1&amp;item_id=[catalogid]'" class="btn" onmouseover="this.className='btn_over'" onmouseout="this.className='btn'" />
+		<a href="add_cart.asp?quick=1&amp;item_id=[catalogid]">ADD TO CART</a> | <a href="product.asp?itemid=[catalogid]">DETAILS</a>
             </div>
         <div class="clear"></div>
         </div>
@@ -109,6 +97,8 @@
       <!--END: FEATURE_ITEM_TEMPLATE_2-->
       <!--END: FEATURE_ITEMS--> 
     </div>
+<div class="titles">Other Items</div>
+      
     <div class="clear"></div>
     <!--END: FEATURE_MENU--> 
     <!--START: catFilterMainBlock-->
@@ -241,33 +231,33 @@
       <!--START: ITEM_TEMPLATE_0-->
           <div class="product-item item-template-0 alternative">
             <div class="img"><a href="product.asp?itemid=[catalogid]"><img src="[THUMBNAIL]" alt="[name]" id="qv_[catalogid]" /></a></div>
-            <div class="name"><a href="product.asp?itemid=[catalogid]">[name]</a></div>
-            <div class="stars">
+            <div class="name"><a href="product.asp?itemid=[catalogid]">[name]</a>
+		<div class="size">[extra_field_3]</div>
+		<div class="price">
+		<!--START: price2-->
+		<div class="retailprice">Normal Price: [price2]</div>
+		<!--END: price2-->
+		<!--START: ITEMPRICE--> 
+		<span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE]
+		<!--END: ITEMPRICE--> 
+		<!--START: SALEPRICE-->
+		<del class="price2">[ITEMPRICE]&nbsp;</del>
+		<span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE]
+		<div class="on-sale">[product_sale]</div>
+		<!--END: SALEPRICE-->
+		<!--START: product_availability--><div class="status">[availability] </div><!--END: product_availability--><!--START: freeshippingblock-->[freeshipping]<!--END: freeshippingblock-->
+		</div>
+            </div>
             <!--START: product_review--> 
+            <div class="stars">
             <!--START: product_review_average-->
                 <img src="assets/templates/common-html5/images/star[review_average].png" alt="Average Rating" /><span>([review_count])</span>
                 <div class="clear"></div>
             <!--END: product_review_average--> 
-            <!--END: product_review-->
             </div>
-            <div class="price"><!--START: ITEMPRICE--> 
-            <span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE]
-            <!--END: ITEMPRICE--> 
-            <!--START: SALEPRICE-->
-            <div class="on-sale">[product_sale]</div>
-            <del class="price2">[ITEMPRICE]&nbsp;</del>
-            <span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE]
-            <!--END: SALEPRICE--></div>
-            <div class="status"><!--START: product_availability-->[availability] <!--END: product_availability--><!--START: freeshippingblock-->[freeshipping]<!--END: freeshippingblock--></div>
-            <!--START: dropimage_widget-->
-                <div id="divDropImage[catalogid]" class="dropimage_widget_wrapper" data-id="[catalogid]" data-thumb="[THUMBNAIL]">
-                    <ul class="dropimage_widget_inner slides"></ul>
-                    <div class="dropimage_widget_noitems">[product_dropimage_widget-no-colors-available]</div>
-                </div>
-                <div class="clear"></div>
-            <!--END: dropimage_widget-->
+            <!--END: product_review-->
             <div class="action">
-                <input type="button" value="[category_buyitlink]" onclick="window.location = 'add_cart.asp?quick=1&amp;item_id=[catalogid]'" class="btn" onmouseover="this.className='btn_over'" onmouseout="this.className='btn'" />
+		<a href="add_cart.asp?quick=1&amp;item_id=[catalogid]">ADD TO CART</a> | <a href="product.asp?itemid=[catalogid]">DETAILS</a>
             </div>
         <div class="clear"></div>
         </div>
@@ -357,68 +347,3 @@
     <!--END: CATEGORY_FOOTER-->
   </form>
 </section>
-
-<!--START: dropimage_widget_script-->
-    <link rel="stylesheet" href="/assets/templates/common-html5/css/flexslider.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="/assets/templates/common-html5/js/jquery.flexslider-min.js"></script>
-    <script type="text/javascript">
-        jQuery(document).ready(function () {
-            fetchAllDropImages();
-        });
-
-        function fetchAllDropImages() {
-            var widgets = jQuery('.dropimage_widget_wrapper');
-                        
-            jQuery.each(widgets, function (i, item) {
-                fetchDropImageItems(jQuery(item).attr('data-id'), jQuery(item).attr('data-thumb'));
-            })
-        }
-                        
-        function fetchDropImageItems(catalogid, thumbnail) {
-            jQuery.ajax({
-                url: 'prod_dropimage_widget.asp',
-                dataType: 'json',
-                type: 'GET',
-                data: 'action=dropimage_widget&catalogid=' + catalogid,
-                cache: false,
-                success: function (arrItems) {
-                    if (arrItems.length == 0){
-                        jQuery('#divDropImage' + catalogid + ' ul.dropimage_widget_inner').remove();
-                        return;
-                    }
-                    jQuery('#divDropImage' + catalogid + ' div.dropimage_widget_noitems').remove();
-                    var list = jQuery('#divDropImage' + catalogid).find('ul.dropimage_widget_inner');
-                    var li = '';
-                    //Add the main image to the list
-                    li += '<li class="dropimage_widget_item" onmouseover="javascript:switchImage(\'qv_' + catalogid + '\', \'' + thumbnail + '\');"><img src="' + thumbnail + '" id="ddi_widg_main_' + catalogid + '" /></li>';
-                    //Add the additional images to the list
-                    jQuery.each(arrItems, function (i, item) {
-                        //Don't add the main thumbnail again on the list
-                        if (item.img != thumbnail)
-                            li += '<li class="dropimage_widget_item" onmouseover="javascript:switchImage(\'qv_' + catalogid + '\', \'' + item.img + '\');"><img src="' + item.img + '" alt="' + item.opt + '" title="' + item.opt + '" id="ddi_widg_' + item.opt + '" /></li>';
-                    });
-                    list.append(li);
-                    jQuery('#divDropImage' + catalogid).flexslider({
-                        animation: "slide",
-                        animationLoop: true,
-                        slideshow: false,
-                        controlNav: false,
-                        itemWidth: 25,
-                        maxItems: 6,
-                        itemMargin: 5,
-                        prevText: "",
-                        nextText: ""
-                    });
-                },
-                error: errorDropImageItems
-            });
-        }
-        function errorDropImageItems(objResponse) {
-        }
-        function switchImage(imgTarget, imgSource) {
-            jQuery("#" + imgTarget).attr("src", imgSource);
-        }
-    </script>
-<!--END: dropimage_widget_script-->
-
-<script type="text/javascript" src="/assets/categories.js"></script>

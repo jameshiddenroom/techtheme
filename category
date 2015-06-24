@@ -1,13 +1,32 @@
 <section id="category">
   <form action="view_category.asp?cat=[catid]" method="post" name="frmsortby" id="frmsortby">
     <!--START: BODY_HEADER-->
-    <div class="breadcrumbs">[CATEGORY_FULLLINE]</div>
     <!--END: BODY_HEADER-->
-    <h1 class="page_headers">[categoryname]</h1>
     <!--START: CATEGORY_HEADER-->
     <div class="category-header" id="categoryHeader">[CONTENT]</div>
     <!--END: CATEGORY_HEADER--> 
-
+    <!--START: SUB_CATEGORIES-->
+    <div id="subcategoriesBlock">
+        <div class="titles">[category_Header-subcategories]</div>
+        <div class="sub-categories-format">
+        <!--START: SUB_CATEGORIES_FORMAT-->
+        <li>
+        <div class="sub-categories">
+              <a href="view_category.asp?cat=[CATID]">
+              <!--START: SUB_CATEGORY_IMAGE-->
+              <span class="img"><img src="[SUB_CATEGORY_IMAGE]" alt="[SUB_CATEGORY_NAME]" /></span>
+              <!--END: SUB_CATEGORY_IMAGE--> 
+              <!--START: SUB_CATEGORY_NAME-->
+              <span class="name">[SUB_CATEGORY_NAME]</span>
+              <!--START: SUB_CATEGORY_NAME--></a>
+              <div class="desc">[SUB_CATEGORY_DESCRIPTION]</div>
+            </div>
+        </li>
+        <!--END: SUB_CATEGORIES_FORMAT-->
+        </div>
+    </div>
+        <div class="clear"></div>
+    <!--END: SUB_CATEGORIES-->
     <!--START: FEATURE_MENU-->
     <div id="featureBlock">
       <div class="titles">[category_Header-specials]</div>
@@ -16,7 +35,7 @@
           <div class="product-item item-template-0 alternative">
             <div class="img"><a href="product.asp?itemid=[catalogid]"><img src="[THUMBNAIL]" alt="[name]" id="qv_[catalogid]" /></a></div>
             <div class="name"><img src="/assets/images/feature.png"><a href="product.asp?itemid=[catalogid]">[name]</a>
-		<div class="size">[extra_field_3]</div>
+		<div class="size">[extra_field_2]</div>
 		<div class="price">
 		<!--START: price2-->
 		<div class="retailprice">Normal Price: [price2]</div>
@@ -41,7 +60,7 @@
             </div>
             <!--END: product_review-->
             <div class="action">
-		<a href="add_cart.asp?quick=1&amp;item_id=[catalogid]">ADD TO CART</a> | <a href="product.asp?itemid=[catalogid]">DETAILS</a>
+		<input type="button" value="[category_buyitlink]" onclick="window.location = 'add_cart.asp?quick=1&amp;item_id=[catalogid]'" class="btn" onmouseover="this.className='btn_over'" onmouseout="this.className='btn'" />
             </div>
         <div class="clear"></div>
         </div>
@@ -97,7 +116,7 @@
       <!--END: FEATURE_ITEM_TEMPLATE_2-->
       <!--END: FEATURE_ITEMS--> 
     </div>
-<div class="titles">Other Items</div>
+<div class="titles" id="otheritems">Other Items</div>
       
     <div class="clear"></div>
     <!--END: FEATURE_MENU--> 
@@ -257,7 +276,7 @@
             </div>
             <!--END: product_review-->
             <div class="action">
-		<a href="add_cart.asp?quick=1&amp;item_id=[catalogid]">ADD TO CART</a> | <a href="product.asp?itemid=[catalogid]">DETAILS</a>
+		<input type="button" value="[category_buyitlink]" onclick="window.location = 'add_cart.asp?quick=1&amp;item_id=[catalogid]'" class="btn" onmouseover="this.className='btn_over'" onmouseout="this.className='btn'" />
             </div>
         <div class="clear"></div>
         </div>

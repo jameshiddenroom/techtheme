@@ -1,6 +1,5 @@
 <section id="extrapage"> 
   <!--START: BODY_HEADER-->
-  <div class="breadcrumbs">[PAGE_FULLLINE]</div>
   <h1 class="page_headers">[htmlpage]</h1>
   <!--END: BODY_HEADER-->
   <!--START: SUB_PAGES-->

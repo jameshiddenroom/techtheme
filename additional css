@@ -341,11 +341,11 @@ td {
 /*titles:: Controls the Tiles  of sections within pages on the site such as (Specials, Feature Items, Items, Related Items).*/ 
 .titles {
 	font-size: 14px;
-	color: #a3a3a3;
+	color: #231f20;
 	font-weight: 400;
 	text-transform: uppercase;
 	line-height: 30px;
-	margin: 0 0 40px;
+	margin: 0 0 5px;
 	border-bottom: 1px solid #a3a3a3;
 	display: block;
 	font-family: 'Open Sans', sans-serif;

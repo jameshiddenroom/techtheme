@@ -420,7 +420,7 @@ td {
 }
 /*item:: Controls the item description and item details text.*/ 
 .item {
-	font-size: 12px;
+	font-size: 13px;
 	color: #383733;
 	font-weight: 400;
 }
@@ -989,10 +989,13 @@ aside .module .name {
 	width: 100%;
 	text-align: center;
 }
+
 aside .module .img {
-	width: 100%;
-	text-align: center;
   overflow: hidden;
+  text-align: center;
+}
+
+aside .module img {
   max-width: 178px;
 }
 aside .module .price2 {
@@ -1436,13 +1439,14 @@ padding: 5px;
 
 .product-item .name {
 font-family: Arial, Helvetica, sans-serif;
+line-height: 1.3;
 text-align: center;
 margin: 0;
 padding: 0 5px 0 5px;
 }
 
 .product-item .name A, A:visited {
-font-weight: bold;
+font-weight: 600;
 font-size: 15px;
 color: #666;
 }
@@ -1463,7 +1467,7 @@ padding-top: 8px;
 }
 
 .product-item .retailprice {
-padding: 5px;
+//padding: 5px;
 font-size: 14px;
 }
 
@@ -1497,6 +1501,53 @@ color: #222222;
 .products-header .sort-by {
   width: 195px;
 }
+
+.linkGateway .payment-desc {
+  margin-top: 0;
+  margin-left: 20px;
+  padding-top: 0;
+}
+
+.quantity-table {
+  display: block;
+  margin-top: 0;
+  padding: 1px;
+  background: #FBFBFB;
+}
+
+#listing0 .pricingBlock {
+  float: left;
+  width: 50%;
+}
+
+#listing0 .quantityBlock {
+  float: left;
+  padding: 5px;
+  border-bottom: 0;
+}
+
+#listing0 .quantity-table {
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+#listing0 .quantity-table .title-header {
+  margin: 0;
+}
+
+#listing0 .quantity-table .colleft {
+  width: 100px;
+  text-align: center;
+  float: left;
+}
+
+#listing0 .quantity-table .colright {
+  width: 70px;
+  text-align: center;
+  float: left;
+}
+
+
 /*	Responsive Navigation Menu
 	--------------------------	*/
 

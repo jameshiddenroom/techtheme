@@ -143,13 +143,13 @@ div.searchlight-results-wrapper {
 	line-height: 24px;
 	display: block;
 	background: #ffffff; /* Old browsers */
-	background: -moz-linear-gradient(top,  #ffffff 1%, #f9f9f9 40%, #eeeeee 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(40%,#f9f9f9), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #ffffff 1%,#f9f9f9 40%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #ffffff 1%,#f9f9f9 40%,#eeeeee 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #ffffff 1%,#f9f9f9 40%,#eeeeee 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #ffffff 1%,#f9f9f9 40%,#eeeeee 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+	background: -moz-linear-gradient(top,  #ffffff 1%, #B3C799 65%, #B3C799 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(65%,#B3C799 ), color-stop(100%,#B3C799 )); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 1%,#f9f9f9 65%,#B3C799 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 1%,#B3C799  65%,#B3C799 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 1%,#B3C799  65%,#B3C799 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 1%,#B3C799  65%,#B3C799 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#B3C799',GradientType=0 ); /* IE6-9 */
 }
 /*footer:: This style controls the text you type under global footer. Merchants usually use to add security logos, credit card logos, privacy notes, etc.*/		
 .footer {
@@ -730,7 +730,7 @@ td {
     text-align: right;
 }
 .top-menu {
-    background: #000;
+    background: #2C3713;
     padding: 10px 0;
 	transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -901,7 +901,7 @@ li.m-search {
 header {
 	position: relative;
 	height: 130px;
-	background: #2d83d5;
+	background: #517413;
 }
 header .wrapper {
 	height: 130px;
@@ -955,7 +955,7 @@ nav#catNavMenu {
 	line-height: 30px;
 	margin: 0;
 	clear: both;
-	background: #f2f2f2;
+	background: #B3C799;
 text-align: center;
 }
 aside {
@@ -1461,7 +1461,7 @@ max-width: 168;
 .product-item .price {
 text-align: center;
 font-size: 19px;
-font-weight: 300;
+font-weight: bold;
 color: #666;
 padding-top: 8px;
 }
@@ -1492,6 +1492,14 @@ padding-top: 20px;
 padding-right: 10px;
 font-size: 13.5px;
 color: #222222;
+}
+
+.secondary .price {
+  color: #666;
+}
+
+.pricingBlock span {
+  padding-left: 0;
 }
 
 .loginField label {
@@ -1545,6 +1553,12 @@ color: #222222;
   width: 70px;
   text-align: center;
   float: left;
+}
+
+
+.incgst {
+  font-size: 11pt;
+  font-weight: normal;
 }
 
 

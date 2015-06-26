@@ -1,4 +1,8 @@
 <section id="home">
+<!--START: CATEGORY_HEADER-->
+<div class="category-header" id="homeHeader">[CONTENT]</div>
+<!--END: CATEGORY_HEADER--> 
+
 <!--START: home_carousel-->
 <link rel="stylesheet" href="/assets/templates/common-html5/css/flexslider.css" type="text/css" media="screen" />
 <script type="text/javascript" src="/assets/templates/common-html5/js/jquery.flexslider-min.js"></script>
@@ -22,9 +26,6 @@
     });
 </script>
 <!--END: home_carousel-->
-<!--START: CATEGORY_HEADER-->
-<div class="category-header" id="homeHeader">[CONTENT]</div>
-<!--END: CATEGORY_HEADER--> 
 <!--START: FEATURE_MENU-->
 <h2 class="header-specials">[category_Header-specials]</h2>
 <!--START: CATEGORY_ITEMS--> 
@@ -32,12 +33,13 @@
           <div class="product-item item-template-0 alternative">
             <div class="img"><a href="product.asp?itemid=[catalogid]"><img src="[THUMBNAIL]" alt="[name]" id="qv_[catalogid]" /></a></div>
             <div class="name"><a href="product.asp?itemid=[catalogid]">[name]</a>
+                <div class="size">[extra_field_3]</div>
 		<div class="price">
 		<!--START: price2-->
 		<div class="retailprice">Normal Price: [price2]</div>
 		<!--END: price2-->
 		<!--START: ITEMPRICE--> 
-		<span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE]
+		<span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE] <span class="incgst">incl GST</span>
 		<!--END: ITEMPRICE--> 
 		<!--START: SALEPRICE-->
 		<del class="price2">[ITEMPRICE]&nbsp;</del>
@@ -56,7 +58,7 @@
             </div>
             <!--END: product_review-->
             <div class="action">
-		<a href="add_cart.asp?quick=1&amp;item_id=[catalogid]">ADD TO CART</a>
+		<input type="button" value="[category_buyitlink]" onclick="window.location = 'add_cart.asp?quick=1&amp;item_id=[catalogid]'" class="btn" onmouseover="this.className='btn_over'" onmouseout="this.className='btn'" />
             </div>
         <div class="clear"></div>
         </div>

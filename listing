@@ -198,7 +198,7 @@
 	  <div id="mediaContainer">
 		<div id="mediaBlock"> 
 		  <!--START: image1-->
-		  <div class="main-image"><img itemprop="image" src="thumbnail.asp?file=[image1]&maxx=[image_medium_w]&maxy=0" align="middle" id="large" name="large" alt="[name]" />
+		  <div class="main-image"><a href="[image1]" class="[3dzoom_class]" id="listing_main_image_link" rel="disable-zoom: true; disable-expand: true;"><img itemprop="image" src="thumbnail.asp?file=[image1]&maxx=[image_medium_w]&maxy=0" align="middle" id="large" name="large" alt="[name]" /></a>
 			<div name="imagecaptiont" title="[imagecaption1]" id="imagecaptiont" class="item">[imagecaption1]</div>
 		  </div>
 		  <!--END: image1--> 
@@ -292,6 +292,10 @@
 
 		<div class="item" itemprop="description">[extended_description]</div>
 
+			<!--START: extra_field_6-->
+			<br />[extra_field_6]<br />
+			<!--END: extra_field_6-->
+<br />
 	  <!--START: totalrating-->
 		<div class="totalrating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
 			<div class="stars">[totalrating]</div>
@@ -363,7 +367,7 @@
 	  <div class="clear"></div>
 	  <!--START: pricing-->
 	  <div class="pricingBlock" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-		<link itemprop="availability" href="http://schema.org/[availability_itemprop]" />
+		<link itemprop="availability" href="http://schema.org/[availability_snippet]" />
 		<h3 class="hidden">[product_Header-price]</h3>
 		<div class="clear"></div>
 		<!--START: price2-->
@@ -373,14 +377,30 @@
 		<!--END: SAVINGS--> 
 		<!--END: price2--> 
 		<!--START: ITEMPRICE-->
-		<div class="yourprice price">[product_yourprice]<span itemprop="price" id="price">[price]</span></div>
+		<div class="price"><span itemprop="price" id="price">[price]</span> <span class="incgst">incl GST</span></div>
 		<!--END: ITEMPRICE--> 
 		<!--START: SALEPRICE-->
-		<div class="saleprice price">[product_onsale]<span itemprop="price" id="price">[saleprice]</span></div>
+		<div class="saleprice price">[product_onsale]<span itemprop="price" id="price">[saleprice]</span> <span class="incgst">incl GST</span></div>
 		<!--END: SALEPRICE-->
 		<div class="clear"></div>
 	  </div>
 	  <!--END: pricing-->
+			  <!--START: quantity-->
+			  <div class="quantityBlock">
+				<div class="quantity-table">
+					<div class="title-header colleft">Bulk Discount</div>
+					<div class="title-header colright">[product_quantitypricing-price]</div>
+					<div class="clear"></div>
+					  <!--START: quantity_items-->
+					  <div class="colleft">[lowbound][highbound]</div>
+					  <div class="colright">[PRICE]</div>
+					<div class="clear"></div>
+					  <!--END: quantity_items-->
+					<div class="clear"></div>
+				</div>
+			  </div>
+			  <!--END: quantity-->
+		<div class="clear"></div>
 	  <div class="availabilityInfo"> 
 		<!--START: product_availability-->
 		<div class="product_availability">
@@ -394,9 +414,6 @@
 		<!--END: freeshippingblock-->
 		<div class="clear"></div>
 	  </div>
-			<!--START: extra_field_6-->
-			[extra_field_6]
-			<!--END: extra_field_6-->
 	  <!--START: PRODUCT_FEATURES_BLOCK-->
 	  <div class="productFeaturesBlock"> 
 		<ul>
@@ -700,24 +717,6 @@
 				</script> 
 			  </div>
 			  <!--END: reward_redeem-->
-			  <!--START: quantity-->
-			  <div class="quantityBlock">
-				<a href="javascript:void(0);" id="showQtyTable"><i class="icon-down-open"></i> [product_Header-quantitypricing]</a>
-				<div class="clear"></div>
-				<div class="quantity-table">
-					<div class="title-header">[product_quantitypricing-quantity]</div>
-					<div class="title-header">[product_quantitypricing-price]</div>
-					<div class="clear"></div>
-					<ul>
-					  <!--START: quantity_items-->
-					  <li>[lowbound][highbound]</li>
-					  <li>[PRICE]</li>
-					  <!--END: quantity_items-->
-					</ul>
-					<div class="clear"></div>
-				</div>
-			  </div>
-			  <!--END: quantity-->
 			  <div class="social-mediaBlock"> 
 				  <!--START: product_social-bookmarking-->
 				  <div class="social-bookmarking">[product_social-bookmarking]</div>
@@ -1084,11 +1083,11 @@
 			<div class="retailprice">Normal Price: [price2]</div>
 			<!--END: price2-->
 			<!--START: ITEMPRICE--> 
-			<span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE]
+			<span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE] <span class="incgst">incl GST</span>
 			<!--END: ITEMPRICE--> 
 			<!--START: SALEPRICE-->
 			<del class="price2">[ITEMPRICE]&nbsp;</del>
-			<span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE]
+			<span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE] <span class="incgst">incl GST</span>
 			<div class="on-sale">[product_sale]</div>
 			<!--END: SALEPRICE-->
 			<!--START: product_availability--><div class="status">[availability] </div><!--END: product_availability--><!--START: freeshippingblock-->[freeshipping]<!--END: freeshippingblock-->
@@ -1130,12 +1129,12 @@
 			<!--END: product_review-->
 			</div>
 			<div class="price"><!--START: ITEMPRICE--> 
-			<span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE]
+			<span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE] <span class="incgst">incl GST</span>
 			<!--END: ITEMPRICE--> 
 			<!--START: SALEPRICE-->
 			<div class="on-sale">[product_sale]</div>
 			<del class="price2">[ITEMPRICE]&nbsp;</del>
-			<span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE]
+			<span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE] <span class="incgst">incl GST</span>
 			<!--END: SALEPRICE--></div>
 			<div class="status"><!--START: product_availability-->[availability] <!--END: product_availability--><!--START: freeshippingblock-->[freeshipping]<!--END: freeshippingblock--></div>
 			<div class="action">
@@ -1162,11 +1161,11 @@
 			<div class="img"><a href="product.asp?itemid=[catalogid]"><img src="[THUMBNAIL]" alt="[name]" /></a></div>
 			<div class="name"><a href="product.asp?itemid=[catalogid]">[name]</a></div>
 			<div class="price"><!--START: ITEMPRICE--> 
-			<span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE]
+			<span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE] <span class="incgst">incl GST</span>
 			<!--END: ITEMPRICE--> 
 			<!--START: SALEPRICE-->
 			<del class="price2">[ITEMPRICE]&nbsp;</del>
-			<span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE]
+			<span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE] <span class="incgst">incl GST</span>
 			<div class="on-sale">[product_sale]</div>
 			<!--END: SALEPRICE--></div>
 			<div class="action">

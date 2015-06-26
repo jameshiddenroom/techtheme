@@ -22,12 +22,12 @@ Your billing information is:
 
 Order Summary
 <!--START: shipment-->_____________________________________________________________________
-Shipping to:
+Delivery to:
 [oshipfirstname] [oshiplastname] [oshipcompany]
 [oshipaddress] [oshipaddress2]
 [oshipcity], [oshipstate] [oshipzip] [oshipcountry]
 
-Shipping Method: [oshipmethod]
+Delivery Method: [oshipmethod]
 <!--START: oshippeddate-->Shipped Date: [oshippeddate]<!--END: oshippeddate-->
 <!--START: trackingcode-->Tracking Number: [trackingcode]<!--END: trackingcode--><!--END: shipment--><!--START: product-->
 [itemid] [itemname] [unitprice] X [numitems]  = [itemsubtotal]
@@ -39,8 +39,7 @@ _____________________________________________________________________
 Subtotal: [osubtotal]
 Discount: [totaldiscounts]
 Shipping: [oshipcost]
-Sales Tax: [otax]
-Total: [orderamount]
+Total (incl GST): [orderamount]
 _____________________________________________________________________
 <!--START: discount_block-->Discounts / Promotions / Gift Certificates
 <!--START: discounts-->- [promotion_name] - [discount_amount]

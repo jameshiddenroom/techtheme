@@ -128,57 +128,6 @@
     <aside id="leftBar" class="leftBar">
       <div class="column" id="column1"> 
         <!--START: LEFT_BAR_BLOCKS-->
-        
-        <!--START: NEW_RELEASES_BLOCK-->
-        <div id="modNewReleases" class="module"> <span class="menu-headers">[frame_new-releases]</span>
-          <div class="clear"></div>
-          <!--START: newreleases--> 
-          
-          <!--START: newreleases_topitem-->
-          <div class="info">
-            <div class="img"><a href="product.asp?itemid=[catalogid]" title="[name]"><img src="[thumbnail]" alt="[name]" /></a></div>
-            <div class="name"><a href="product.asp?itemid=[catalogid]" class="link">[name]</a></div>
-            <div class="clear"></div>
-            <!--START: product_review--> 
-            <!--START: product_review_average-->
-            <div class="stars"><img src="assets/templates/[template]/images/star[review_average].png" alt="Average Rating" /></div>
-            <!--END: product_review_average--> 
-            <!--END: product_review-->
-            <div class="price2"><!--START: ITEMPRICE--> 
-              [ITEMPRICE] 
-              <!--END: ITEMPRICE--> 
-              <!--START: SALEPRICE--> 
-              [ITEMSALEPRICE] 
-              <!--END: SALEPRICE--></div>
-            <div class="clear"></div>
-          </div>
-          <div class="clear"></div>
-          <!--END: newreleases_topitem--> 
-          
-          <!--START: newreleases_item-->
-          <div class="div"></div>
-          <div class="info">
-            <div class="name"><a href="product.asp?itemid=[catalogid]" class="link">[name]</a></div>
-            <div class="clear"></div>
-            <!--START: product_review--> 
-            <!--START: product_review_average-->
-            <div class="stars"><img src="assets/templates/[template]/images/star[review_average].png" alt="Average Rating" /></div>
-            <!--END: product_review_average--> 
-            <!--END: product_review-->
-            <div class="price2"><!--START: ITEMPRICE--> 
-              [ITEMPRICE] 
-              <!--END: ITEMPRICE--> 
-              <!--START: SALEPRICE--> 
-              [ITEMSALEPRICE] 
-              <!--END: SALEPRICE--></div>
-            <div class="clear"></div>
-          </div>
-          <div class="clear"></div>
-          <!--END: newreleases_item--> 
-          
-          <!--END: newreleases--> 
-        </div>
-        <!--END: NEW_RELEASES_BLOCK-->
 
         <!--START: FRAME_MAILLIST-->
         <div id="modNewsletter" class="module">
@@ -199,6 +148,62 @@
           <div class="clear"></div>
         </div>
         <!--END: FRAME_MAILLIST-->         
+
+        
+        <!--START: NEW_RELEASES_BLOCK-->
+        <div id="modNewReleases" class="module"> <span class="menu-headers">[frame_new-releases]</span>
+          <div class="clear"></div>
+          <!--START: newreleases--> 
+          
+          <!--START: newreleases_topitem-->
+          <div class="info">
+            <div class="img"><a href="product.asp?itemid=[catalogid]" title="[name]"><img src="[thumbnail]" alt="[name]" /></a></div>
+            <div class="name"><a href="product.asp?itemid=[catalogid]" class="link">[name]</a></div>
+            <div class="size">[extra_field_3]</div>
+            <div class="clear"></div>
+            <!--START: product_review--> 
+            <!--START: product_review_average-->
+            <div class="stars"><img src="assets/templates/[template]/images/star[review_average].png" alt="Average Rating" /></div>
+            <!--END: product_review_average--> 
+            <!--END: product_review-->
+            <div class="price2"><!--START: ITEMPRICE--> 
+              [ITEMPRICE] <span class="incgst">incl GST</span>
+              <!--END: ITEMPRICE--> 
+              <!--START: SALEPRICE--> 
+              [ITEMSALEPRICE] 
+              <!--END: SALEPRICE--></div>
+            <div class="clear"></div>
+          </div>
+          <div class="clear"></div>
+          <!--END: newreleases_topitem--> 
+          
+          <!--START: newreleases_item-->
+          <div class="div"></div>
+          <div class="info">
+            <div class="img"><a href="product.asp?itemid=[catalogid]" title="[name]"><img src="[thumbnail]" alt="[name]" /></a></div>
+            <div class="name"><a href="product.asp?itemid=[catalogid]" class="link">[name]</a></div>
+            <div class="size">[extra_field_3]</div>
+            <div class="clear"></div>
+            <!--START: product_review--> 
+            <!--START: product_review_average-->
+            <div class="stars"><img src="assets/templates/[template]/images/star[review_average].png" alt="Average Rating" /></div>
+            <!--END: product_review_average--> 
+            <!--END: product_review-->
+            <div class="price2"><!--START: ITEMPRICE--> 
+              [ITEMPRICE] <span class="incgst">incl GST</span>
+              <!--END: ITEMPRICE--> 
+              <!--START: SALEPRICE--> 
+              [ITEMSALEPRICE] 
+              <!--END: SALEPRICE--></div>
+            <div class="clear"></div>
+          </div>
+          <div class="clear"></div>
+          <!--END: newreleases_item--> 
+          
+          <!--END: newreleases--> 
+        </div>
+        <!--END: NEW_RELEASES_BLOCK-->
+
 
         <!--START: FRAME_BYPRICE-->
         <div id="modPrice" class="module"> <span class="menu-headers">[frame_byprice]</span>

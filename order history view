@@ -249,9 +249,6 @@ String.prototype.trim = function () {
         <div class="text">[discounts]</div>
         <div class="clear"></div>
         <!--START: TAX-->
-        <div class="label">[shoppingcart_taxes]:</div>
-        <div class="text">[tax]</div>
-        <div class="clear"></div>
         <!--END: TAX--> 
         <!--START: TAX2-->
         <div class="label">[shoppingcart_taxes2]:</div>

@@ -133,20 +133,28 @@
     <div class="secondary">
       <h1 itemprop="name" class="page_headers">[name]</h1>
       <div class="clear"></div>
-        <!--START: pricing-->
-        <div class="pricingBlock" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-        <link itemprop="availability" href="http://schema.org/[availability_itemprop]" />
-        <!--START: ITEMPRICE-->
-        <div class="price">[product_yourprice]<span itemprop="price" id="price">[price]</span></div>
-        <div class="clear"></div>
-        <!--END: ITEMPRICE--> 
-        <!--START: SALEPRICE-->
-        <div class="price">[product_yourprice]<span itemprop="price" id="price">[saleprice]</span></div>
-        <div class="clear"></div>
-        <!--END: SALEPRICE-->
-        <div class="clear"></div>
-        </div>
-        <!--END: pricing-->
+        <div class="size">[extra_field_3]</div>
+        <div class="item" itemprop="description">[extended_description]</div>
+	  <!--START: pricing-->
+	  <div class="pricingBlock" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+		<link itemprop="availability" href="http://schema.org/[availability_itemprop]" />
+		<h3 class="hidden">[product_Header-price]</h3>
+		<div class="clear"></div>
+		<!--START: price2-->
+		<div class="retailprice">Normal Price: [price2]</div>
+		<!--START: SAVINGS-->
+		<div class="savings">[product_savings]<span>[savings]</span><span>([savings_percentage]%)</span></div>
+		<!--END: SAVINGS--> 
+		<!--END: price2--> 
+		<!--START: ITEMPRICE-->
+		<div class="yourprice price"><span itemprop="price" id="price">[price]</span> <span class="incgst">incl GST</span></div>
+		<!--END: ITEMPRICE--> 
+		<!--START: SALEPRICE-->
+		<div class="saleprice price">[product_onsale]<span itemprop="price" id="price">[saleprice]</span> <span class="incgst">incl GST</span></div>
+		<!--END: SALEPRICE-->
+		<div class="clear"></div>
+	  </div>
+	  <!--END: pricing-->
         <div class="availabilityInfo"> 
         <!--START: product_availability-->
         <div class="product_availability">

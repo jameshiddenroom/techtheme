@@ -84,7 +84,7 @@
       <!--START: oaddress2-->
       <p>[oaddress2]</p>
       <!--END: oaddress2-->
-      <p>[ocity], [ostate] [ozip] - [ocountry]</p>
+      <p>Singapore [ozip]</p>
       <!--START: ophone-->
       <p>[ophone]</p>
       <!--END: ophone--> 
@@ -105,7 +105,7 @@
       <!--START: oshipaddress2-->
       <p>[oshipaddress2]</p>
       <!--END: oshipaddress2-->
-      <p>[oshipcity], [oshipstate] [oshipzip] - [oshipcountry]</p>
+      <p>Singapore [oshipzip]</p>
       <!--END: shipping_address--> 
     </div>
     <!--end shipping block-->
@@ -114,7 +114,7 @@
   <div class="shippingInfoBlock"> 
     <!--START: shipping_info-->
     <div class="label">[invoice_shipmethod]</div>
-    <div class="text">[oshipmethod] ([totalweight]lbs.)</div>
+    <div class="text">[oshipmethod]</div>
     <div class="clear"></div>
     <!--START: trackingcode-->
     <div class="label">[invoice_trackingnum]:</div>
@@ -152,7 +152,7 @@
     <!--START: items-->
     <div class="row">
       <div class="invoice-id">[id]</div>
-      <div class="invoice-items">[itemname]</div>
+      <div class="invoice-items">[itemname] [extra_field_3]</div>
       <div class="invoice-price">[unitprice]</div>
       <div class="invoice-qty">[numitems]</div>
       <div class="invoice-total">[subtotal]</div>
@@ -173,9 +173,6 @@
         <div class="label">[shoppingcart_discount]:</div>
         <div class="clear"></div>
         <!--START: TAX-->
-        <div class="text" style="width:100px">[tax]</div>
-        <div class="label">[shoppingcart_taxes]:</div>
-        <div class="clear"></div>
         <!--END: TAX--> 
         <!--START: TAX2-->
         <div class="text" style="width:100px">[tax2]</div>

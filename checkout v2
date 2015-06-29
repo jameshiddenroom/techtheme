@@ -301,7 +301,7 @@ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="assets/templates
       </div>
       <div class="clear"></div>
       <div style="display: none;">
-	<input type="hidden" name="billing_city" id="billing_city" value="-">
+	<input name="billing_city" type="text" onchange="clearContent(this);" id="billing_city" value="[billing_city]" placeholder="[CustomerInfo_city]" size="25" tabindex="11" class="txtBoxStyle" />
         <select id="billing_state" onchange="this.form.billing_zip.value='';check_address('billing');" name="billing_state" tabindex="12" class="txtBoxStyle">
         </select>
       </div>  

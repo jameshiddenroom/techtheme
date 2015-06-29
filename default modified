@@ -1041,15 +1041,9 @@ aside .module .div {
 }
 .topsellers_topitem .img {
 	display: initial;
-	width: 100%;
-	height: 100%;
 	text-align: center;
 	vertical-align: middle;
 	position: relative;
-}
-.topsellers_topitem .img img {
-	width: 100%;
-	height: 100%;
 }
 .topsellers_topitem .info {
 	background: #FFF;
@@ -1560,6 +1554,33 @@ color: #222222;
   font-size: 11pt;
   font-weight: normal;
 }
+
+#viewCart .item-info {
+  width: 60%;
+}
+
+#viewCart .item-price {
+  width: 15%;
+}
+
+
+#checkoutSinglePagev2 .chkComments {
+  display: block;
+}
+
+.invoiceTable .invoice-id {
+  display: none;
+}
+
+.invoiceTable .invoice-items {
+  width: 59%;
+}
+
+.invoiceTable .invoice-total {
+  width: 15%;
+}
+
+
 
 
 /*	Responsive Navigation Menu

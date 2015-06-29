@@ -376,7 +376,7 @@ background: #CC0000 !important;
                                 [ophone]<br /><!--END: ophone-->
                                 [oaddress] <br /><!--START: oaddress2-->
                                 [oaddress2]<br /><!--END: oaddress2-->
-                                [ocity], [ostate] [ozip] [ocountry]
+                                [ocountry] [ozip]
                             </p>
                         </td>
                         <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 17px; font-size: 12px; margin: 0; padding: 0;" align="left" valign="top"></td>
@@ -422,7 +422,7 @@ background: #CC0000 !important;
                                     [oshipcompany]
                                     <!--END: oshipcompany-->
                                     <br />
-                                    [oshipaddress] [oshipaddress2] [oshipcity],<br />[oshipstate] [oshipzip] [oshipcountry]<br /><br /><!--START: oshippeddate--><strong>Shipped Date</strong><br />[oshippeddate]<!--END: oshippeddate-->
+                                    [oshipaddress] [oshipaddress2],<br />[oshipcountry] [oshipzip]<br /><br /><!--START: oshippeddate--><strong>Shipped Date</strong><br />[oshippeddate]<!--END: oshippeddate-->
                                 </td>
                             </tr></table></td>
                         <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 17px; font-size: 12px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">

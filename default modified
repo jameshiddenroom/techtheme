@@ -1348,9 +1348,14 @@ ul#desktopMenu li {
 	line-height: 50px;
 }
 ul#desktopMenu li:hover {
-background: #000;
-	color: #fff;
+background: #E7F0DA;
 	font-size: 14px!important;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 0;
+  padding: 0 0 1px 0;
+  z-index: 11;
 }
 ul#desktopMenu li:hover a {
 	color: #fff;
@@ -1369,14 +1374,15 @@ ul#desktopMenu li a:hover {
 ul#desktopMenu li ul {
 	display: none;
 	position: absolute;
-	top: 50px;
-	z-index: 10;
-	left: 0px;
-	background: #000;
+	top: 48px;
+	z-index: -1;
+	left: -1px;
+	background: #E7F0DA;
 	text-align: left;
 	padding:10px 0 10px 0;
 	margin-left: 0px;
 	width: 200px;
+border: 1px solid #000;
 }
 ul#desktopMenu li:hover ul {
 	display: block;

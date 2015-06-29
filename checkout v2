@@ -362,13 +362,19 @@ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="assets/templates
       <input name="shipping_company" type="text" onchange="clearContent(this);" id="shipping_company" value="[shipping_company]" placeholder="[CustomerInfo_company]" size="25" tabindex="20" class="txtBoxStyle" />
       <div class="clear"></div>
     </div>
-    <div class="chkField">
+    <div class="chkField chkFullWidth">
       <input name="shipping_address" type="text" onchange="clearContent(this);[po_box_disabled_billing]" id="shipping_address" value="[shipping_address]" placeholder="[CustomerInfo_address]" size="25" tabindex="21" class="txtBoxStyle" />
-      <input name="shipping_address2" type="text" onchange="clearContent(this);" id="shipping_address2" value="[shipping_address2]" placeholder="[CustomerInfo_address2]" size="25" tabindex="22" class="txtBoxStyle" />
       <div class="clear"></div>
     </div>
-    <div class="chkField">
+    <div class="chkField chkFullWidth" style="display: none;">
       <input name="shipping_city" type="text" onchange="clearContent(this);" id="shipping_city" value="[shipping_city]" placeholder="[CustomerInfo_city]" size="25" tabindex="23" class="txtBoxStyle" />
+      <select id="shipping_state" onchange="this.form.shipping_zip.value='';check_address('shipping');" name="shipping_state" tabindex="24" class="txtBoxStyle">
+      </select>
+      <div class="clear"></div>
+      <input name="shipping_address2" type="text" onchange="clearContent(this);" id="shipping_address2" value="[shipping_address2]" placeholder="[CustomerInfo_address2]" size="25" tabindex="22" class="txtBoxStyle" />
+    </div>
+    <div class="chkField" style="display: none;">
+      <input name="shipping_city" type="text" onchange="clearContent(this);" id="shipping_city" value="-" placeholder="[CustomerInfo_city]" size="25" tabindex="23" class="txtBoxStyle" />
       <select id="shipping_state" onchange="this.form.shipping_zip.value='';check_address('shipping');" name="shipping_state" tabindex="24" class="txtBoxStyle">
       </select>
       <div class="clear"></div>
@@ -1365,11 +1371,11 @@ body {
           frmvalidator.addValidation("billing_zip","maxlen=15");
           frmvalidator.addValidation("billing_zip","req","Please enter your billing zip code");
 	
-          <!--START: emailrequiredscript-->
+          //<!--START: emailrequiredscript-->
           frmvalidator.addValidation("billing_email","maxlen=50","Max length for Email is 50");
           frmvalidator.addValidation("billing_email","req","Please enter your email address");
           frmvalidator.addValidation("billing_email","email");		
-          <!--END: emailrequiredscript-->
+          //<!--END: emailrequiredscript-->
 	
           <!--START: confirmemailscript-->
           if (document.billing.billing_confirmemail != null && document.billing.billing_confirmemail != 'undefined')
@@ -1406,8 +1412,8 @@ body {
                   frmvalidator.addValidation("shipping_address","maxlen=50");
                   frmvalidator.addValidation("shipping_address","req","Please enter your shipping address");
 
-                  frmvalidator.addValidation("shipping_city","maxlen=50");
-                  frmvalidator.addValidation("shipping_city","req","Please enter your shipping city");
+//                  frmvalidator.addValidation("shipping_city","maxlen=50");
+//                  frmvalidator.addValidation("shipping_city","req","Please enter your shipping city");
 
                   if (get_Element('shipping_country').value == "US" || get_Element('shipping_state').type == 'select-one')
                   {

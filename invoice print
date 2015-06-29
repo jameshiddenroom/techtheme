@@ -4,6 +4,15 @@
 <head>
 <title>[company]</title>
 <link rel="stylesheet" href="/assets/templates/common-html5/css/layout.css" type="text/css" media="all" />
+<style>
+#invoicePrint .right-col .label {
+  width: 60%;
+}
+
+#invoicePrint .right-col .text {
+  width: 40%;
+}
+</style>
 </head>
 <body>
 <!--END: PAGEHEAD--> 
@@ -24,9 +33,9 @@
       <!--START: address2-->
       <p>[address2]</p>
       <!--END: address2-->
-      <p>[city], [state] [zip]</p>
+      <p>Singapore [zip]</p>
       <!--START: phone1-->
-      <p>[phone1]</p>
+      <p>Tel: [phone1]</p>
       <!--END: phone1--> 
     </div>
     <!--end customer info block--> 
@@ -59,7 +68,7 @@
       <!--START: oaddress2-->
       <p>[oaddress2]</p>
       <!--END: oaddress2-->
-      <p>[ocity], [ostate] [ozip] - [ocountry]</p>
+      <p>Singapore [ozip]</p>
       <!--START: ophone-->
       <p>[ophone]</p>
       <!--END: ophone--> 
@@ -80,7 +89,7 @@
       <!--START: oshipaddress2-->
       <p>[oshipaddress2]</p>
       <!--END: oshipaddress2-->
-      <p>[oshipcity], [oshipstate] [oshipzip] - [oshipcountry]</p>
+      <p>Singapore [oshipzip]</p>
       <!--END: shipping_address--> 
       <!--START: shipping_multiple--> 
       <!--START: shipment-->
@@ -140,7 +149,7 @@
     <!--START: items-->
     <div class="row">
       <div class="invoice-id">[id]</div>
-      <div class="invoice-items">[itemname]</div>
+      <div class="invoice-items">[itemname] [extra_field_3]</div>
       <div class="invoice-price">[unitprice]</div>
       <div class="invoice-qty">[numitems]</div>
       <div class="invoice-total">[subtotal]</div>
@@ -159,16 +168,13 @@
         <!--END: invoice_terms--> 
       </div>
       <div class="right-col">
-        <div class="label">SubTotal:</div>
+        <div class="label">SubTotal (incl GST):</div>
         <div class="text">[subtotal]</div>
         <div class="clear"></div>
         <div class="label">Discount:</div>
         <div class="text">[discounts]</div>
         <div class="clear"></div>
         <!--START: TAX-->
-        <div class="label">Tax:</div>
-        <div class="text">[TAX]</div>
-        <div class="clear"></div>
         <!--END: TAX--> 
         <!--START: TAX2-->
         <div class="label">Tax 2:</div>
@@ -183,7 +189,7 @@
         <div class="label">Shipping:</div>
         <div class="text">[shipping]</div>
         <div class="clear"></div>
-        <div class="label">Total:</div>
+        <div class="label">Total (incl GST):</div>
         <div class="text">[total]</div>
         <div class="clear"></div>
       </div>

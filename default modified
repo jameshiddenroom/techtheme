@@ -730,7 +730,7 @@ td {
     text-align: right;
 }
 .top-menu {
-    background: #2C3713;
+    background: #303A09;
     padding: 10px 0;
 	transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -901,7 +901,7 @@ li.m-search {
 header {
 	position: relative;
 	height: 130px;
-	background: #517413;
+	background: #69941D;
 }
 header .wrapper {
 	height: 130px;
@@ -955,7 +955,7 @@ nav#catNavMenu {
 	line-height: 30px;
 	margin: 0;
 	clear: both;
-	background: #B3C799;
+	background: #C0DA9F;
 text-align: center;
 }
 aside {

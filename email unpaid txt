@@ -1,6 +1,7 @@
 [ofirstname] [olastname],
+
 Thank you for your order! 
-This email confirms that your order was received at [store_name]. You will receive an additional email once your order is shipped. Contact us if you have any questions about your order.
+Contact us if you have any questions about your order.
 
 [store_name].
 
@@ -18,28 +19,26 @@ E-mail: [oemail]
 Your billing information is:
 [ofirstname] [olastname] [ocompany]
 [oaddress] [oaddress2]
-[ocity], [ostate] [ozip] [ocountry]
+[ocountry] [ozip]
 
 Order Summary
 <!--START: shipment-->_____________________________________________________________________
-Delivery to:
+Shipping to:
 [oshipfirstname] [oshiplastname] [oshipcompany]
 [oshipaddress] [oshipaddress2]
-[oshipcity], [oshipstate] [oshipzip] [oshipcountry]
+[oshipcountry] [oshipzip]
 
-Delivery Method: [oshipmethod]
+Shipping Method: [oshipmethod]
 <!--START: oshippeddate-->Shipped Date: [oshippeddate]<!--END: oshippeddate-->
 <!--START: trackingcode-->Tracking Number: [trackingcode]<!--END: trackingcode--><!--END: shipment--><!--START: product-->
-[itemid] [itemname] [unitprice] X [numitems]  = [itemsubtotal]
-<!--END: product-->
-<!--START: edownload-->
-To download go to this link [store_url]/order_eproduct.asp?action=edownload&eid=[orderkey]
-<!--END: edownload-->
+[itemname] [extra_field_3] [unitprice] X [numitems]  = [itemsubtotal]
+<!--END: product--><!--START: edownload--><a href="[store_url]/order_eproduct.asp?action=edownload&eid=[orderkey]">Click Here to download</a>
+or go to this link [store_url]/order_eproduct.asp?action=edownload&eid=[orderkey]<!--END: edownload-->
 _____________________________________________________________________
-Subtotal: [osubtotal]
+Subtotal (incl GST): [osubtotal]
 Discount: [totaldiscounts]
 Shipping: [oshipcost]
-Total (incl GST): [orderamount]
+Balance Due: [orderamount]
 _____________________________________________________________________
 <!--START: discount_block-->Discounts / Promotions / Gift Certificates
 <!--START: discounts-->- [promotion_name] - [discount_amount]

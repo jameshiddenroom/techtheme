@@ -277,20 +277,17 @@ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="assets/templates
         <input name="billing_company" type="text" onchange="clearContent(this);" id="billing_company" value="[billing_company]" placeholder="[CustomerInfo_company]" size="25" tabindex="8" class="txtBoxStyle" />
         <div class="clear"></div>
       </div>
-      <div class="chkField">
+      <div class="chkField chkFullWidth">
         <input name="billing_address" type="text" onchange="clearContent(this);[po_box_disabled_billing]" id="billing_address" value="[billing_address]" placeholder="[CustomerInfo_address]" size="25" tabindex="9" class="txtBoxStyle" />
+        <div class="clear"></div>
+      </div>
+      <div class="chkField chkFullWidth" style="display: none;">
         <input name="billing_address2" type="text" onchange="clearContent(this);" id="billing_address2" value="[billing_address2]" placeholder="[CustomerInfo_address2]" size="25" tabindex="10" class="txtBoxStyle" />
         <div class="clear"></div>
       </div>
       <div class="chkField">
-        <input name="billing_city" type="text" onchange="clearContent(this);" id="billing_city" value="[billing_city]" placeholder="[CustomerInfo_city]" size="25" tabindex="11" class="txtBoxStyle" />
-        <select id="billing_state" onchange="this.form.billing_zip.value='';check_address('billing');" name="billing_state" tabindex="12" class="txtBoxStyle">
-        </select>
-        <div class="clear"></div>
-      </div>
-      <div class="chkField">
-        <input name="billing_zip" maxlength="15" type="text" id="billing_zip" value="[billing_zip]" placeholder="[CustomerInfo_zip]" size="10" tabindex="13" class="txtBoxStyle" onchange="clearContent(this);check_address('billing');" />
-        <select name="billing_country" onchange="this.form.billing_zip.value='';populateState('billing_state','billing_country');check_stateValidator('billing');check_address('billing');" tabindex="14" class="txtBoxStyle" id="billing_country">
+        <input name="billing_zip" maxlength="15" type="text" id="billing_zip" value="[billing_zip]" placeholder="[CustomerInfo_zip]" size="10" tabindex="13" class="txtBoxStyle" onchange="clearContent(this);" />
+        <select name="billing_country" tabindex="14" class="txtBoxStyle" id="billing_country">
         </select>
         <div class="clear"></div>
       </div>
@@ -303,6 +300,13 @@ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="assets/templates
         <div class="clear"></div>
       </div>
       <div class="clear"></div>
+      <div style="display: none;">
+	<input type="hidden" name="billing_city" id="billing_city" value="-">
+        <select id="billing_state" onchange="this.form.billing_zip.value='';check_address('billing');" name="billing_state" tabindex="12" class="txtBoxStyle">
+        </select>
+      </div>  
+
+
     </div>
   </div>
   <div class="clear"></div>
@@ -1350,15 +1354,6 @@ body {
           frmvalidator.addValidation("billing_address","maxlen=50");
           frmvalidator.addValidation("billing_address","req","Please enter your billing address");
 
-          frmvalidator.addValidation("billing_city","maxlen=50");
-          frmvalidator.addValidation("billing_city","req","Please enter your billing city");
-
-          if (get_Element('billing_country').value == "US" || get_Element('billing_state').type == 'select-one')
-          {
-              frmvalidator.addValidation("billing_state","req","Please enter/select your billing state");
-              frmvalidator.addValidation("billing_state","maxlen=50");
-          }
-
           frmvalidator.addValidation("billing_zip","maxlen=15");
           frmvalidator.addValidation("billing_zip","req","Please enter your billing zip code");
 	
@@ -1402,15 +1397,6 @@ body {
               	  //<!--END: phonerequiredscript_shipping-->
                   frmvalidator.addValidation("shipping_address","maxlen=50");
                   frmvalidator.addValidation("shipping_address","req","Please enter your shipping address");
-
-                  frmvalidator.addValidation("shipping_city","maxlen=50");
-                  frmvalidator.addValidation("shipping_city","req","Please enter your shipping city");
-
-                  if (get_Element('shipping_country').value == "US" || get_Element('shipping_state').type == 'select-one')
-                  {
-                      frmvalidator.addValidation("shipping_state","req","Please enter/select your shipping state");
-                      frmvalidator.addValidation("shipping_state","maxlen=50");
-                  }
 
                   frmvalidator.addValidation("shipping_zip","maxlen=15");
                   frmvalidator.addValidation("shipping_zip","req","Please enter your shipping zip code");

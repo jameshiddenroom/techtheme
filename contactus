@@ -77,19 +77,6 @@
   <!--START: CATEGORY_HEADER-->
 <div class="category-header" id="contactUsHeader">[CONTENT]</div>
   <!--END: CATEGORY_HEADER-->
-  <div class="storeInfo pad10 boxShadow">
-    <div class="header">
-    	<h3>[store_name]</h3>
-    </div>
-    <div class="store-address1 item">[store_address1]</div>
-    <div class="store-address2 item">[store_address2]</div>
-    <div class="store-city item">[store_city], [store_state]. [store_zip]</div>
-    <div class="store-country item">[store_country]</div>
-    <div class="item"><strong>Phone:</strong> [store_phone]</div>
-    <div class="button store-loc"><a href="http://maps.google.com/maps?oi=map&q=[store_address1]+[store_city]+[store_state]+[store_zip]" target="_self" class="icon-btn icon-btn-geopin">Get Directions</a></div>
-    <div class="clear"></div>
-  </div>
-  <div class="clear"></div>
   <div class="crmForm pad10 boxShadow">
     <form method="post" action="crm.asp" id="frmForm" name="frmForm">
       <input type="hidden" name="action" id="action" value="" />

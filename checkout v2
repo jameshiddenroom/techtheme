@@ -66,7 +66,7 @@ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="assets/templates
       <div class="totalinstructions ">[checkout3_totalinstructions]</div>
       <!--END: total_template_noshipping--> 
       <!--START: total_template-->
-      <div class="total_items">[itemCount] Item(s)</div>
+      <div class="total_items">[itemCount] Item(s) (incl GST)</div>
       <div class="total_subtotal">[SUBTOTAL]</div>
       <div class="clear"></div>
       <!--START: DISCOUNTS-->
@@ -1139,7 +1139,6 @@ body {
     <div class="clear"></div>
     <div id="divPaymentOption[id]" name="divPaymentOption" style="display:none;">
         <div class="payment-desc">[payment_description]</div>
-        <div class="payment-type">[payment_type]</div>
         <!--START: CUSTOM_FIELD-->
         <div class="custField">
         <div class="cust-input">[InputName]</div>
@@ -1369,13 +1368,13 @@ body {
           }
 
           frmvalidator.addValidation("billing_zip","maxlen=15");
-          frmvalidator.addValidation("billing_zip","req","Please enter your billing zip code");
+          frmvalidator.addValidation("billing_zip","req","Please enter your billing postcode");
 	
-          //<!--START: emailrequiredscript-->
+          <!--START: emailrequiredscript-->
           frmvalidator.addValidation("billing_email","maxlen=50","Max length for Email is 50");
           frmvalidator.addValidation("billing_email","req","Please enter your email address");
           frmvalidator.addValidation("billing_email","email");		
-          //<!--END: emailrequiredscript-->
+          <!--END: emailrequiredscript-->
 	
           <!--START: confirmemailscript-->
           if (document.billing.billing_confirmemail != null && document.billing.billing_confirmemail != 'undefined')

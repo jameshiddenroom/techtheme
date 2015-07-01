@@ -272,8 +272,7 @@ div.searchlight-results-wrapper {
 }
 /*A.cat:: Controls the way the Category Links display in the left or right navigation bars before a user clicks or mouses over them.*/ 	 
 A, A:visited {
-	color: #000;
-	font-size: 12px;
+color: #666;
 	font-style: normal;
 	font-weight: 400;
 	text-decoration: none;
@@ -311,7 +310,7 @@ tr {
 td {
 	text-decoration: none;
 	word-spacing: normal;
-	font-size: 12px;
+	font-size: 13px;
 }
 /*data:: Controls the font style of your content on all the pages.*/
 .data {
@@ -334,7 +333,7 @@ td {
 	font-weight: 800;
 	margin: 0;
 	color: #000;
-	text-transform: uppercase;
+//	text-transform: uppercase;
 	border-bottom: 1px solid #a3a3a3;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -1013,12 +1012,12 @@ aside .module .div {
 	margin: 10px 0;
 }
 
-#modNewReleases .name A, A:visited {
+#leftBar .name A, #leftBar .name A:visited {
   font-size: 14px;
   font-weight: bold;
 }
 
-#modNewReleases .size {
+#leftBar .size {
   text-align: center;
 }
 
@@ -1346,19 +1345,16 @@ ul#desktopMenu li {
 	margin: 0;
 	height: 50px;
 	line-height: 50px;
+  border-top: 1px solid #C0DA9F;
 }
 ul#desktopMenu li:hover {
-background: #E7F0DA;
+background: #e7f0da;
+	color: #000;
 	font-size: 14px!important;
-  border-top: 1px solid #000;
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
-  border-bottom: 0;
-  padding: 0 0 1px 0;
-  z-index: 11;
+  border-top: 1px solid #303A09;
 }
 ul#desktopMenu li:hover a {
-	color: #fff;
+	color: #000;
 }
 ul#desktopMenu li a {
 	display: block;
@@ -1374,15 +1370,14 @@ ul#desktopMenu li a:hover {
 ul#desktopMenu li ul {
 	display: none;
 	position: absolute;
-	top: 48px;
-	z-index: -1;
-	left: -1px;
+	top: 49px;
+	z-index: 10;
+	left: 0px;
 	background: #E7F0DA;
 	text-align: left;
 	padding:10px 0 10px 0;
 	margin-left: 0px;
 	width: 200px;
-border: 1px solid #000;
 }
 ul#desktopMenu li:hover ul {
 	display: block;
@@ -1396,9 +1391,6 @@ ul#desktopMenu li ul li a {
 	border: none;
 }
 ul#desktopMenu li ul li a:hover {
-	color: #fff;
-background: #B3C2B3;
-	border: none;
 }
 ul#desktopMenu li ul li {
 	margin: 0;
@@ -1411,7 +1403,7 @@ height: 30px;
 line-height: 30px;
 }
 ul#desktopMenu li ul li:hover {
-	background: #B3C2B3;
+	background: #C0DA9F;
 	border: none;
 }
 .down {
@@ -1445,7 +1437,7 @@ margin: 0;
 padding: 0 5px 0 5px;
 }
 
-.product-item .name A, A:visited {
+.product-item .name A, .product-item .name A:visited {
 font-weight: 600;
 font-size: 15px;
 color: #666;
@@ -1479,6 +1471,9 @@ text-align: center;
 color: #666;
 }
 
+.product-item .info {
+font-family: Arial, Helvetica, sans-serif;
+}
 
 .primary {
 padding-top: 20px;
@@ -1557,8 +1552,12 @@ color: #222222;
 
 
 .incgst {
-  font-size: 11pt;
+  font-size: 10pt;
   font-weight: normal;
+}
+
+.product-item .incgst {
+  display: block;
 }
 
 #viewCart .item-info {
@@ -1586,7 +1585,10 @@ color: #222222;
   width: 15%;
 }
 
-
+.payment-desc {
+  margin-top: 0;
+  text-align: right;
+}
 
 
 /*	Responsive Navigation Menu

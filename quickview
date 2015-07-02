@@ -133,7 +133,7 @@
     <div class="secondary">
       <h1 itemprop="name" class="page_headers">[name]</h1>
       <div class="clear"></div>
-        <div class="size">[extra_field_3]</div>
+        <div class="size">[extra_field_2]</div>
         <div class="item" itemprop="description">[extended_description]</div>
 	  <!--START: pricing-->
 	  <div class="pricingBlock" itemprop="offers" itemscope itemtype="http://schema.org/Offer">

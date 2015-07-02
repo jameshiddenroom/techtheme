@@ -19,13 +19,14 @@
       <div class="section-1">
       <i class="icon-mail"></i><p>An email receipt including the details about your order has been sent to the email address provided. Please keep it for your records.</p>
       <div class="clear"></div>
+      [thankyoumessage]
       </div>
       <div class="section-2">
       <p>You can visit the My Account page at any time to check the status of your order<span class="hidden-mobile"> or click here to <a href="javascript:void(0);" onclick="printInvoiceModal();">print a copy of your receipt</a></span>.</p><i class="icon-print hidden-mobile"></i><i class="icon-laptop show-mobile"></i>
       <div class="clear"></div>
       </div>
       <div class="last-section">
-      <p>We appreciate your trust and we'll do our best to continue to give you the kind of service you deserve. Thanks again, for your business. [thankyoumessage]</p>
+      <p>We appreciate your trust and we'll do our best to continue to give you the kind of service you deserve. Thanks again, for your business.</p>
       </div>
       <!--END: ordercompleted--> 
   </div>
@@ -152,7 +153,7 @@
     <!--START: items-->
     <div class="row">
       <div class="invoice-id">[id]</div>
-      <div class="invoice-items">[itemname] [extra_field_3]</div>
+      <div class="invoice-items">[itemname] [extra_field_2]</div>
       <div class="invoice-price">[unitprice]</div>
       <div class="invoice-qty">[numitems]</div>
       <div class="invoice-total">[subtotal]</div>

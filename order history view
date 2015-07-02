@@ -18,6 +18,11 @@
     width: 50%;
 }
 </style>
+<style type="text/css">
+p, h4 {
+  margin: 0;
+}
+</style>
 <script type="text/javascript">
 function saveRecurring(objForm) {
 	var strMsg = "";
@@ -105,13 +110,13 @@ String.prototype.trim = function () {
       <!--START: address2-->
       <p>[address2]</p>
       <!--END: address2-->
-      <p>[city], [state] [zip]</p>
+      <p>Singapore [zip]</p>
     </div>
     <!--end customer info block--> 
     <!--start invoice info block-->
     <div class="right-col">
       <div class="label">[invoice_dateordered]</div>
-      <div class="text">[odate]</div>
+      <div class="text">[odate_day]/[odate_month]/[odate_year]</div>
       <div class="clear"></div>
       <div class="label">[invoice_ordernum]</div>
       <div class="text">[invoicenum_prefix][invoicenum]</div>
@@ -137,7 +142,7 @@ String.prototype.trim = function () {
       <!--START: oaddress2-->
       <p>[oaddress2]</p>
       <!--END: oaddress2-->
-      <p>[ocity], [ostate] [ozip] - [ocountry]</p>
+      <p>Singapore [ozip]</p>
       <!--START: ophone-->
       <p>[ophone]</p>
       <!--END: ophone--> 
@@ -158,7 +163,7 @@ String.prototype.trim = function () {
       <!--START: oshipaddress2-->
       <p>[oshipaddress2]</p>
       <!--END: oshipaddress2-->
-      <p>[oshipcity], [oshipstate] [oshipzip] - [oshipcountry]</p>
+      <p>Singapore [oshipzip]</p>
       <!--END: shipping_address--> 
       <!--START: shipping_multiple--> 
       <!--START: shipment-->

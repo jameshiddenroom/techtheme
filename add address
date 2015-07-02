@@ -65,12 +65,12 @@
         <!--END: req_shipping_address-->
         <div class="clear"></div>
       </div>
-      <div class="frmField">
+      <div class="frmField" style="display:none">
         <label for="shipping_address2">[CustomerInfo_address2]</label>
         <input name="shipping_address2" type="text" id="shipping_address2" value="[shipping_address2]" size="25" tabindex="7" class="txtBoxStyle" />
         <div class="clear"></div>
       </div>
-      <div class="frmField">
+      <div class="frmField" style="display:none;">
         <label for="shipping_city">[CustomerInfo_city]</label>
         <input name="shipping_city" type="text" id="shipping_city" value="[shipping_city]" size="25" tabindex="8" class="txtBoxStyle" />
         <!--START: req_shipping_city--> 
@@ -79,29 +79,29 @@
         <div class="clear"></div>
       </div>
       <div class="frmField">
+        <label for="shipping_zip">[CustomerInfo_zip]</label>
+        <input name="shipping_zip" type="text" id="shipping_zip" value="[shipping_zip]" size="10" tabindex="9" class="txtBoxStyle" />
+        <!--START: req_shipping_zip--> 
+        <img src="assets/templates/common/images/error2.gif" width="12" height="12" alt="" /> 
+        <!--END: req_shipping_zip-->
+        <div class="clear"></div>
+      </div>
+      <div class="frmField">
         <label for="">[CustomerInfo_country]</label>
-        <select id='shipping_country' name='shipping_country' onchange="populateState('shipping_state','shipping_country');" tabindex="9" class="txtBoxStyle">
+        <select id='shipping_country' name='shipping_country' onchange="populateState('shipping_state','shipping_country');" tabindex="11" class="txtBoxStyle">
         </select>
         <!--START: req_shipping_country--> 
         <img src="assets/templates/common/images/error2.gif" width="12" height="12" alt="" /> 
         <!--END: req_shipping_country-->
         <div class="clear"></div>
       </div>
-      <div class="frmField">
+      <div class="frmField" style="display:none;">
         <label for="shipping_state">[CustomerInfo_state]</label>
         <select id="shipping_state" name="shipping_state" tabindex="10" class="txtBoxStyle">
         </select>
         <!--START: req_shipping_state--> 
         <img src="assets/templates/common/images/error2.gif" width="12" height="12" alt="" /> 
         <!--END: req_shipping_state-->
-        <div class="clear"></div>
-      </div>
-      <div class="frmField">
-        <label for="shipping_zip">[CustomerInfo_zip]</label>
-        <input name="shipping_zip" type="text" id="shipping_zip" value="[shipping_zip]" size="10" tabindex="11" class="txtBoxStyle" />
-        <!--START: req_shipping_zip--> 
-        <img src="assets/templates/common/images/error2.gif" width="12" height="12" alt="" /> 
-        <!--END: req_shipping_zip-->
         <div class="clear"></div>
       </div>
       <!--START: addressType-->
@@ -183,14 +183,14 @@
 	
 	    frmvalidator.addValidation("shipping_address2","maxlen=40","Max length for Suite/Apt# is 40");
 	
-	    frmvalidator.addValidation("shipping_city","maxlen=50","Max length for City is 50");
-	    frmvalidator.addValidation("shipping_city","req","Please enter your City");
+	    //frmvalidator.addValidation("shipping_city","maxlen=50","Max length for City is 50");
+	    //frmvalidator.addValidation("shipping_city","req","Please enter your City");
 	
 	    frmvalidator.addValidation("shipping_country","maxlen=50");
 	    frmvalidator.addValidation("shipping_country","req",0);
 	
-	    frmvalidator.addValidation("shipping_state","maxlen=50","Max length for State is 50");
-	    frmvalidator.addValidation("shipping_state","req",0);
+	    //frmvalidator.addValidation("shipping_state","maxlen=50","Max length for State is 50");
+	    //frmvalidator.addValidation("shipping_state","req",0);
 	
 	    frmvalidator.addValidation("shipping_zip","maxlen=15","Max length for Zip is 15");
 	    frmvalidator.addValidation("shipping_zip", "req", "Please enter your zip code");

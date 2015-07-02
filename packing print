@@ -117,7 +117,7 @@
     <!--START: items-->
     <div class="row">
       <div class="invoice-id">[id]</div>
-      <div class="invoice-items">[itemname]<!--START: warehouse_location--><br />
+      <div class="invoice-items">[itemname] [extra_field_2]<!--START: warehouse_location--><br />
         [warehouse_location] [warehouse_aisle] [warehouse_bin] [warehouse_custom]<!--END: warehouse_location--></div>
       <div class="invoice-qty">[numitems]</div>
       <div class="clear"></div>

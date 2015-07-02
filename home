@@ -33,7 +33,7 @@
           <div class="product-item item-template-0 alternative">
             <div class="img"><a href="product.asp?itemid=[catalogid]"><img src="[THUMBNAIL]" alt="[name]" id="qv_[catalogid]" /></a></div>
             <div class="name"><a href="product.asp?itemid=[catalogid]">[name]</a>
-                <div class="size">[extra_field_3]</div>
+                <div class="size">[extra_field_2]</div>
 		<div class="price">
 		<!--START: price2-->
 		<div class="retailprice">Normal Price: [price2]</div>
@@ -58,7 +58,7 @@
             </div>
             <!--END: product_review-->
             <div class="action">
-		<input type="button" value="[category_buyitlink]" onclick="window.location = 'add_cart.asp?quick=1&amp;item_id=[catalogid]'" class="btn" onmouseover="this.className='btn_over'" onmouseout="this.className='btn'" />
+		<button type="button" value="[category_buyitlink]" class="btn" onclick="window.location = 'add_cart.asp?quick=1&amp;item_id=[catalogid]'"><i class="icon-basket"></i> [product_addtocart]</button>
             </div>
         <div class="clear"></div>
         </div>

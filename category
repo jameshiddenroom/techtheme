@@ -35,7 +35,7 @@
           <div class="product-item item-template-0 alternative">
             <div class="img"><a href="product.asp?itemid=[catalogid]"><img src="[THUMBNAIL]" alt="[name]" id="qv_[catalogid]" /></a></div>
             <div class="name"><img src="/assets/images/feature.png"><a href="product.asp?itemid=[catalogid]">[name]</a>
-		<div class="size">[extra_field_3]</div>
+		<div class="size">[extra_field_2]</div>
 		
 		<!--START: product_availability--><div class="price"><div class="status">[availability] </div></div><!--END: product_availability--><!--START: freeshippingblock--><div class="price">[freeshipping]</div><!--END: freeshippingblock-->
 		<!--START: price2-->
@@ -250,7 +250,7 @@
           <div class="product-item item-template-0 alternative">
             <div class="img"><a href="product.asp?itemid=[catalogid]"><img src="[THUMBNAIL]" alt="[name]" id="qv_[catalogid]" /></a></div>
             <div class="name"><a href="product.asp?itemid=[catalogid]">[name]</a>
-		<div class="size">[extra_field_3]</div>
+		<div class="size">[extra_field_2]</div>
 		
 		<!--START: product_availability--><div class="price"><div class="status">[availability] </div></div><!--END: product_availability--><!--START: freeshippingblock--><div class="price">[freeshipping]</div><!--END: freeshippingblock-->
 		<!--START: price2-->

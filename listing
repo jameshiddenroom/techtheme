@@ -193,7 +193,7 @@
 	<!--END: NEXT_PROD-->
 	<div class="clear"></div>
 
-<div style="border: 1px solid #A1A1A1; color: #666; background: #FFF; padding: 0px;">
+<div style="border: 1px solid #BABABA; color: #666; background: #FFF; padding: 0px;">
 	<div class="primary">
 	  <div id="mediaContainer">
 		<div id="mediaBlock"> 
@@ -202,9 +202,6 @@
 			<div name="imagecaptiont" title="[imagecaption1]" id="imagecaptiont" class="item">[imagecaption1]</div>
 		  </div>
 		  <!--END: image1--> 
-			<div id="realmediaBlock">
-			  <iframe id="realmedia" src="[realmedia]" frameborder="0" allowfullscreen></iframe>
-			</div>
 		  <div class="addl-images">
 			  <div class="carousel">
 				  <ul class="slides">
@@ -293,9 +290,18 @@
 		<div class="item" itemprop="description">[extended_description]</div>
 
 			<!--START: extra_field_6-->
-			<br />[extra_field_6]<br />
+			[extra_field_6]
 			<!--END: extra_field_6-->
-<br />
+		<div class="social-mediaBlock"> 
+		  <!--START: product_social-bookmarking-->
+		  <div class="social-bookmarking">[product_social-bookmarking]</div>
+		  <!--END: product_social-bookmarking--> 
+		  <!--START: frame_likebutton-->
+		  <div class="likebutton">[frame_likebutton]</div>
+		  <!--END: frame_likebutton-->
+		  <div class="clear"></div>
+		</div>
+
 	  <!--START: totalrating-->
 		<div class="totalrating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
 			<div class="stars">[totalrating]</div>
@@ -387,8 +393,9 @@
 	  <!--END: pricing-->
 			  <!--START: quantity-->
 			  <div class="quantityBlock">
+			  	Bulk Discount Available!
 				<div class="quantity-table">
-					<div class="title-header colleft">Bulk Discount</div>
+					<div class="title-header colleft">Quantity</div>
 					<div class="title-header colright">[product_quantitypricing-price]</div>
 					<div class="clear"></div>
 					  <!--START: quantity_items-->
@@ -678,7 +685,7 @@
 				});
 			}
 		</script>
-		<!--END: waitinglist--> 
+		<!--END: waitinglist-->
 	  <div class="detail-section">
 	  <!--START: addtocart-->
 		  <div class="alpha-col">
@@ -717,15 +724,6 @@
 				</script> 
 			  </div>
 			  <!--END: reward_redeem-->
-			  <div class="social-mediaBlock"> 
-				  <!--START: product_social-bookmarking-->
-				  <div class="social-bookmarking">[product_social-bookmarking]</div>
-				  <!--END: product_social-bookmarking--> 
-				  <!--START: frame_likebutton-->
-				  <div class="likebutton">[frame_likebutton]</div>
-				  <!--END: frame_likebutton-->
-				  <div class="clear"></div>
-			  </div>
 		  </div>
 	  <!--END: addtocart-->  
 		  <div class="beta-col">
@@ -970,66 +968,7 @@
 		  </div>
 		</div>
 		<!--END: reviews-->
-		<div id="tab-3" style="display: none;"> 
-		  <a name="qa"></a>
-		  <div class="qa_link button right">[qa_link]</div>
-		  <div class="qaBlock">
-		  <!--START: qa_list-->
-		  <div class="qa_list"> <span class="q">[productqa_q]</span>&nbsp;<strong>[question]</strong>
-			<div class="q-author"> <em>[productqa_question-submit-by]:&nbsp;<span>[q_user_name]</span> 
-			  <!--START: q_user_email--> 
-			  <a href="mailto:[q_user_email]">[q_user_email]</a> 
-			  <!--END: q_user_email--> 
-			  - [q_date_added]</em> 
-			  <!--START: qa_answers-->
-			  <div class="qa_answers"> <span class="a">[productqa_a]</span>&nbsp;[answer] 
-				<!--START: qa_allowratings-->
-				<div class="qa_allowratings"> [productqa_answer-helpful]&nbsp;
-				  <input type="button" id="btnYes" value="[productqa_helpyes]" onclick="updateQAStats('[ans_id]',[a_id],1)" />
-				  <input type="button" id="btnNo" value="[productqa_helpno]" onclick="	updateQAStats('[ans_id]',[a_id],-1)" />
-				  <em><strong><span id="spn[a_id]">[a_helpful]&nbsp;[productqa_of]&nbsp;[a_votes]</span></strong>&nbsp;[productqa_found-helpful]</em> </div>
-				<!--END: qa_allowratings--> 
-				<em>[productqa_answer-submit-by]: &nbsp;<span>[a_user_name] ([a_date_added])</span></em> </div>
-			  <!--END: qa_answers--> 
-			  <!--START: qa_noanswers-->
-			  <div class="qa_noanswers">[productqa_no-answers]</div>
-			  <!--END: qa_noanswers-->
-			  <div class="clear"></div>
-			  <!--START: qa_allowuserresponse--> 
-			  <div class="button right"><a rel="nofollow" onclick="javascript:answerQa();" class="icon-btn icon-btn-edit">([productqa_submit-answer])</a></div>
-				<script type="text/javascript">
-					function answerQa() {
-						var src = 'productqa.asp?action=newAns&catalogid=[catalogid]&qa_id=[qa_id]';
-						var intHeight, intWidth;
-						intHeight = 520;
-						intWidth = 795;
-						if (document.body.clientWidth < 767) {
-							intHeight = 460;
-							intWidth = 300;
-						}
-						jQuery.modal('<iframe src="' + src + '" height="' + intHeight + '" width="' + intWidth + '" style="border:0">', {
-						    closeClass: 'modalCloseImg',
-						    closeHTML: '<a href="#">Close</a>',
-							containerCss:{
-								backgroundColor:"#fff", 
-								borderColor:"#fff", 
-								height:intHeight, 
-								padding:0, 
-								width:(intWidth+5)
-							},
-							overlayClose:true,
-							onShow: function(dialog){ 
-								dialog.wrap.css('overflow','hidden');
-							}
-						});
-					}
-				</script>
-			  <!--END: qa_allowuserresponse--> 
-			</div>
-			<div class="clear"></div>
-		  </div>
-		  <!--END: qa_list--> 
-		</div>
+		<div id="tab-3" style="display: none;">
 		</div>
 		<div id="tab-4" style="display: none;">
 		</div>
@@ -1077,11 +1016,12 @@
 		  <div class="product-item related_items0 alternative">
 	            <div class="img"><a href="product.asp?itemid=[catalogid]"><img src="[THUMBNAIL]" alt="[name]" id="qv_[catalogid]" /></a></div>
 	            <div class="name"><a href="product.asp?itemid=[catalogid]">[name]</a>
-			<div class="size">[extra_field_3]</div>
-			<div class="price">
+			<div class="size">[extra_field_2]</div>
 			<!--START: price2-->
 			<div class="retailprice">Normal Price: [price2]</div>
 			<!--END: price2-->
+	            </div>
+			<div class="price">
 			<!--START: ITEMPRICE--> 
 			<span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE] <span class="incgst">incl GST</span>
 			<!--END: ITEMPRICE--> 
@@ -1092,7 +1032,6 @@
 			<!--END: SALEPRICE-->
 			<!--START: product_availability--><div class="status">[availability] </div><!--END: product_availability--><!--START: freeshippingblock-->[freeshipping]<!--END: freeshippingblock-->
 			</div>
-	            </div>
 	            <!--START: product_review--> 
 	            <div class="stars">
 	            <!--START: product_review_average-->
@@ -1120,14 +1059,14 @@
 		  <div class="product-item accessories_items0 alternative">
 			<div class="img"><a href="product.asp?itemid=[catalogid]"><img src="[THUMBNAIL]" alt="[name]" id="qv_[catalogid]" /></a></div>
 			<div class="name"><a href="product.asp?itemid=[catalogid]">[name]</a></div>
-			<div class="stars">
 			<!--START: product_review--> 
+			<div class="stars">
 			<!--START: product_review_average-->
 				<img src="assets/templates/common-html5/images/star[review_average].png" alt="Average Rating" /><span>([review_count])</span>
 				<div class="clear"></div>
 			<!--END: product_review_average--> 
-			<!--END: product_review-->
 			</div>
+			<!--END: product_review-->
 			<div class="price"><!--START: ITEMPRICE--> 
 			<span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE] <span class="incgst">incl GST</span>
 			<!--END: ITEMPRICE--> 
@@ -1159,7 +1098,8 @@
 	  <!--START: browsing_history_items-->
 		<div class="product-item alternative">
 			<div class="img"><a href="product.asp?itemid=[catalogid]"><img src="[THUMBNAIL]" alt="[name]" /></a></div>
-			<div class="name"><a href="product.asp?itemid=[catalogid]">[name]</a></div>
+			<div class="name"><a href="product.asp?itemid=[catalogid]">[name]</a><div class="info">[extra_field_2]</div></div>
+			
 			<div class="price"><!--START: ITEMPRICE--> 
 			<span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE] <span class="incgst">incl GST</span>
 			<!--END: ITEMPRICE--> 
@@ -1478,47 +1418,6 @@ function check_stock(what,partnum) {
     }
 }
 
-function add_wishlist() {
-
-    if ('[Enabled_Multiple_WishList]' == '1') {
-
-        //window.open('[link_addtolist]','popup','height=300,width=550,location=no,scrollbars=no,menubars=no,toolbars=no,resizable=yes');
-        
-        var src = '[link_addtolist]';
-        var intHeight, intWidth;
-        intHeight = 480;
-        intWidth = 495;
-
-        if (document.body.clientWidth < 767) {
-            intHeight = 460;
-            intWidth = 300;
-        }
-        jQuery.modal('<iframe src="' + src + '" height="' + intHeight + '" width="' + intWidth + '" style="border:0">', {
-            closeClass: 'modalCloseImg',
-            closeHTML: '<a href="#">Close</a>',
-            containerCss:{
-                backgroundColor:"#fff", 
-                borderColor:"#fff", 
-                height:intHeight, 
-                padding:0, 
-                width:(intWidth+5)
-            },
-            overlayClose:true,
-            onShow: function(dialog){ 
-                dialog.wrap.css('overflow','hidden');
-            }
-        });
-    }
-    else {
-        document.add.action = "add_cart.asp?action=addWishList";
-        document.add.submit();
-    }
-}
-
-function add_giftregistry() {
-    document.add.action = "add_cart.asp?action=addGiftRegistry";
-    document.add.submit();
-}
 
 function check_and_add(formx)
 {
@@ -1545,14 +1444,6 @@ function check_and_add(formx)
     }
 }
 
-function add_wishlistcustom(strListType, intListId, strListName)
-{
-    document.add.wishListCustomType.value = strListType;
-    document.add.wishListCustomId.value = intListId;
-    document.add.wishListCustomname.value = strListName;
-    document.add.action = "add_cart.asp?action=addWishList";
-    document.add.submit();
-}
 </script> 
 <script type="text/javascript">
 	var currency_symbol='[currency]';

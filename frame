@@ -27,7 +27,6 @@
 <link rel="alternate" type="application/rss+xml" title="Products On Sale (RSS 2.0)" href="[store_url]/rss.asp?type=onsale" />
 <link rel="alternate" type="application/rss+xml" title="New Releases (RSS 2.0)" href="[store_url]/rss.asp?type=newreleases" />
 <link rel="alternate" type="application/rss+xml" title="Best Sellers (RSS 2.0)" href="[store_url]/rss.asp?type=bestsellers" />
-<link rel="alternate" type="application/rss+xml" title="Latest Blog Posts (RSS 2.0)" href="[store_url]/rss.asp?type=blog" />
 <!--END: FRAME_RSSFEEDS -->
 <script type="text/javascript">
     if (typeof jQuery == 'undefined') {
@@ -42,7 +41,7 @@
     <div class="wrapper">         
     <a id="mobileMenu" class="show-mobile"><i class="icon-ellipsis-vert"></i></a>
     <a href="view_cart.asp" id="mobileCart" class="show-mobile"><i class="icon-basket"></i></a>
-    <span class="greeting"><img src="assets/templates/[template]/images/phone.png" alt="">  [store_phone] | <img src="assets/templates/[template]/images/person.png" alt="">  <!--START: login-->Welcome, <span>Guest</span> <span class="bullet">&bull;</span> <a href="myaccount.asp">Login</a><!--END: login--><!--START: username-->Welcome back, <span>[username]</span> <span class="bullet">&bull;</span> <a href="logout.asp">Logout</a><!--END: username-->  | <img src="assets/templates/[template]/images/shopping-cart-white.png" alt="">  <a href="/view_cart.asp">View Cart</a></span>
+    <span class="greeting"><img src="assets/templates/[template]/images/phone.png" alt="">  [store_phone] | <img src="assets/templates/[template]/images/person.png" alt="">  <!--START: login--><a href="myaccount.asp">Login</a><!--END: login--><!--START: username-->Welcome back, <span>[username]</span> <span class="bullet">&bull;</span> <a href="logout.asp">Logout</a><!--END: username-->  | <img src="assets/templates/[template]/images/shopping-cart-white.png" alt="">  <a href="/view_cart.asp">View Cart</a></span>
     <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="showSlideMenu">
       <a id="closeSlideMenu" class="show-mobile"><i class="icon-cancel-circled"></i></a>
       <ul>
@@ -76,11 +75,12 @@
       <div id="logo"><a href="/" title="[store_name]"><!--START: global_header-->
         <h1 class="store-name">[storename]</h1>
         <h3 class="store-slogan">[storeslogan]</h3>
+        <div class="clear"></div>
         <!--END: global_header--></a></div>
         <div id="cart-area">
           <div class="shop">
             <div class="right">
-              <div class="itemsincart">Cart (<span>[ITEMSINCART]</span>) | <a href="/view_cart.asp">[SUBTOTAL]</a></div>
+              <div class="itemsincart"><a href="/view_cart.asp">Cart (<span>[ITEMSINCART]</span>) | [SUBTOTAL]</a></div>
             </div>            
             <div class="left"><a href="/view_cart.asp"><img src="assets/templates/[template]/images/shopping-cart.png" alt=""></a></div>
           </div>
@@ -159,7 +159,7 @@
           <div class="info">
             <div class="img"><a href="product.asp?itemid=[catalogid]" title="[name]"><img src="[thumbnail]" alt="[name]" /></a></div>
             <div class="name"><a href="product.asp?itemid=[catalogid]" class="link">[name]</a></div>
-            <div class="size">[extra_field_3]</div>
+            <div class="size">[extra_field_2]</div>
             <div class="clear"></div>
             <!--START: product_review--> 
             <!--START: product_review_average-->
@@ -182,7 +182,7 @@
           <div class="info">
             <div class="img"><a href="product.asp?itemid=[catalogid]" title="[name]"><img src="[thumbnail]" alt="[name]" /></a></div>
             <div class="name"><a href="product.asp?itemid=[catalogid]" class="link">[name]</a></div>
-            <div class="size">[extra_field_3]</div>
+            <div class="size">[extra_field_2]</div>
             <div class="clear"></div>
             <!--START: product_review--> 
             <!--START: product_review_average-->
@@ -223,27 +223,24 @@
           <div class="line-border-double">          
           <!--START: topsellers-->          
           <!--START: topsellers_topitem--> 
-          <div class="topsellers_topitem">
-            <div class="top-sellers-star">[ranking]</div>
+          <div class="div"></div>
+          <div class="info">
             <div class="img"><a href="product.asp?itemid=[catalogid]" title="[name]"><img src="[thumbnail]" alt="[name]" /></a></div>
+            <div class="name"><a href="product.asp?itemid=[catalogid]" class="link">[name]</a></div>
+            
             <div class="clear"></div>
-            <div class="info">
-              <div class="name"><a href="product.asp?itemid=[catalogid]" class="link">[name]</a></div>
-              <div class="clear"></div>
-              <!--START: product_review--> 
-              <!--START: product_review_average-->
-              <div class="stars"><img src="assets/templates/[template]/images/star[review_average].png" alt="Average Rating" /></div>
-              <!--END: product_review_average--> 
-              <!--END: product_review-->
-              <div class="price2"><!--START: ITEMPRICE--> 
-                [ITEMPRICE] 
-                <!--END: ITEMPRICE--> 
-                <!--START: SALEPRICE--> 
-                [ITEMSALEPRICE] 
-                <!--END: SALEPRICE--></div>
-              <div class="clear"></div>
-              <!--<div class="action"><a href="product.asp?itemid=[catalogid]">Learn More</a></div>-->
-            </div>
+            <!--START: product_review--> 
+            <!--START: product_review_average-->
+            <div class="stars"><img src="assets/templates/[template]/images/star[review_average].png" alt="Average Rating" /></div>
+            <!--END: product_review_average--> 
+            <!--END: product_review-->
+            <div class="price2"><!--START: ITEMPRICE--> 
+              [ITEMPRICE] <span class="incgst">incl GST</span>
+              <!--END: ITEMPRICE--> 
+              <!--START: SALEPRICE--> 
+              [ITEMSALEPRICE] 
+              <!--END: SALEPRICE--></div>
+            <div class="clear"></div>
           </div>
           <div class="clear"></div>
           <!--END: topsellers_topitem--> 
@@ -251,24 +248,24 @@
           <!--START: topsellers_item-->
           <div class="div"></div>
           <div class="info">
-            <div class="img secondary-left"><a href="product.asp?itemid=[catalogid]" title="[name]"><img src="[thumbnail]" alt="[name]" /></a></div>
-            <div class="secondary-right">
+            <div class="img"><a href="product.asp?itemid=[catalogid]" title="[name]"><img src="[thumbnail]" alt="[name]" /></a></div>
             <div class="name"><a href="product.asp?itemid=[catalogid]" class="link">[name]</a></div>
+            
+            <div class="clear"></div>
             <!--START: product_review--> 
             <!--START: product_review_average-->
             <div class="stars"><img src="assets/templates/[template]/images/star[review_average].png" alt="Average Rating" /></div>
             <!--END: product_review_average--> 
             <!--END: product_review-->
             <div class="price2"><!--START: ITEMPRICE--> 
-              [ITEMPRICE] 
+              [ITEMPRICE] <span class="incgst">incl GST</span>
               <!--END: ITEMPRICE--> 
               <!--START: SALEPRICE--> 
               [ITEMSALEPRICE] 
               <!--END: SALEPRICE--></div>
-              </div>
+            <div class="clear"></div>
           </div>
           <div class="clear"></div>
-
           <!--END: topsellers_item--> 
           <!--END: topsellers-->
           </div>
@@ -379,37 +376,18 @@ jQuery(document).ready(function () {
     });
 });
 </script>
-<div class="stats"> 
-  <!--START: 3dcart stats--> 
-  <script type="text/javascript">
-//<![CDATA[
-var file='/stats/count.asp';
-
-var stats_d=new Date();
-var stats_s=stats_d.getSeconds();
-var stats_m=stats_d.getMinutes();
-var stats_x=stats_s*stats_m;
-var prdID = '[catalogid]';
-var catID = '[catid]';
-
-stats_f='' + escape(document.referrer); stats_f=stats_f.replace('_','----');
-if (navigator.appName=='Netscape'){stats_b='NS';}
-if (navigator.appName=='Microsoft Internet Explorer'){stats_b='MSIE';}
-if (navigator.appVersion.indexOf('MSIE 3')>0) {stats_b='MSIE';}
-stats_u='' + escape(document.URL); stats_u=stats_u.replace('_','----'); stats_w=screen.width; stats_h=screen.height;
-stats_v=navigator.appName;
-stats_fs = window.screen.fontSmoothingEnabled;
-if (stats_v != 'Netscape') {stats_c=screen.colorDepth;}
-else {stats_c=screen.pixelDepth;}
-stats_j=navigator.javaEnabled();
-info='w=' + stats_w + '&h=' + stats_h + '&c=' + stats_c + '&r=' + stats_f + '&u='+ stats_u + '&fs=' + stats_fs + '&b=' + stats_b + '&x=' + stats_x + '&cat=' + catID + '&prd=' + prdID;
-document.write('<img src="' + file + '?'+info+ '" width="1" height="1" border="0" alt="stats" />');
-//]]>
+<!-- AddThis Smart Layers BEGIN -->
+<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-5350364935e4f191"></script>
+<script type="text/javascript">
+  addthis.layers({
+    'theme' : 'transparent',
+    'share' : {
+      'position' : 'left',
+      'numPreferredServices' : 5
+    }   
+  });
 </script>
-  <noscript>
-  <img src="/stats/count.asp" width="90" height="30" alt="" />
-  </noscript>
-  <!--END: 3dcart stats--> 
-</div>
+<!-- AddThis Smart Layers END -->
 </body>
 </html>

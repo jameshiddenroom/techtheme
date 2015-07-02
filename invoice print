@@ -5,6 +5,14 @@
 <title>[company]</title>
 <link rel="stylesheet" href="/assets/templates/common-html5/css/layout.css" type="text/css" media="all" />
 <style>
+#invoicePrint .right {
+  padding-right: 8px;
+}
+
+#invoicePrint .invoiceTable .invoice-total {
+  padding-right: 8px;
+}
+
 #invoicePrint .right-col .label {
   width: 60%;
 }
@@ -42,7 +50,7 @@
     <!--start invoice info block-->
     <div class="right-col">
       <div class="label">Order Date:</div>
-      <div class="text">[odate_month]/[odate_day]/[odate_year]</div>
+      <div class="text">[odate_day]/[odate_month]/[odate_year]</div>
       <div class="clear"></div>
       <div class="label">Order Number #:</div>
       <div class="text">[invoicenum_prefix][invoicenum]</div>
@@ -149,7 +157,7 @@
     <!--START: items-->
     <div class="row">
       <div class="invoice-id">[id]</div>
-      <div class="invoice-items">[itemname] [extra_field_3]</div>
+      <div class="invoice-items">[itemname] [extra_field_2]</div>
       <div class="invoice-price">[unitprice]</div>
       <div class="invoice-qty">[numitems]</div>
       <div class="invoice-total">[subtotal]</div>

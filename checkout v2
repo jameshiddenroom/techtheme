@@ -185,7 +185,7 @@ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="assets/templates
     <div class="chkField">
       <div class="checkbox-format">
         <input type="checkbox" value="1" id="registerGuest" name="registerguest" tabindex="4" />
-        <label for="registerGuest">Remember me! Create my [store_name] account.</label>
+        <label for="registerGuest">Create an  account (Optional)</label>
         <div class="clear"></div>
       </div>
     <div class="clear"></div>
@@ -262,7 +262,6 @@ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="assets/templates
       <!--START: SAVE_ADDRESSES-->
       <div class="chkField chkFullWidth">
         <select type="dropdown" name="save_address" onchange="javascript:filladdress_form(this,'billing','billing');check_address('billing');" tabindex="5" class="txtBoxStyle">
-            <option>[checkout3_PreviousAddresses]</option>
             [address_billing_list]
         </select>
         <div class="clear"></div>
@@ -347,7 +346,6 @@ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="assets/templates
     <!--START: SAVE_ADDRESSES2-->
     <div class="chkField chkFullWidth">
       <select type="dropdown" name="save_address" onchange="javascript:filladdress_form(this,'billing','shipping');check_address('shipping');" tabindex="17" class="txtBoxStyle">
-          <option>[checkout3_PreviousAddresses]</option>    
           [address_list]
       </select>
       <div class="clear"></div>
@@ -474,7 +472,7 @@ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="assets/templates
     <div id="shipResult">
       <p>[checkout3_shippinginstructions]</p>
     </div>
-    <div class="left"><a href="javascript:check_address('refresh');"><i class="icon-arrows-cw"></i> [checkout3_refreshRates]</a></div>
+    <div class="left" style="display: none;"><a href="javascript:check_address('refresh');"><i class="icon-arrows-cw"></i> [checkout3_refreshRates]</a></div>
     <div class="clear"></div>
   </div>
   <div class="clear"></div>
@@ -1493,7 +1491,7 @@ body {
     <!--START: SHIPPING_OPTION-->
     <div class="shippingOption">
       <input type="radio" name="shipping" value="[ID]" [SELECTED] id="radio_ship" onClick="select_shipping([ID]);" />
-      <div class="shipper-option-desc"><!--[OPTION-SHIPPER]-->[OPTION-DESCRIPTION]</div>
+      <div class="shipper-option-desc" id="shippingmethod[ID]"><!--[OPTION-SHIPPER]-->[OPTION-DESCRIPTION]</div>
       <div class="shipper-option-price2">[OPTION-PRICE2]</div>
       <div class="clear"></div>
     </div>

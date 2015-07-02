@@ -23,8 +23,8 @@
   <div class="viewAddress pad10 boxShadow">
     <h3>[address_alias]</h3>
     <p>[shipping_firstname] [shipping_lastname]</p>
-    <p>[shipping_address]. <!--START: shipping_address2--><span>[shipping_address2]</span><!--END: shipping_address2--></p>
-    <p>[shipping_city], [shipping_state] [shipping_zip] [shipping_country]</p>
+    <p>[shipping_address] <!--START: shipping_address2--><span>, [shipping_address2]</span><!--END: shipping_address2--></p>
+    <p>Singapore [shipping_zip]</p>
     <p>[shipping_phone]</p>
     <!--START: addressType-->
     <p>[addressTypeText]</p>

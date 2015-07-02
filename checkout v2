@@ -1491,7 +1491,7 @@ body {
     <!--START: SHIPPING_OPTION-->
     <div class="shippingOption">
       <input type="radio" name="shipping" value="[ID]" [SELECTED] id="radio_ship" onClick="select_shipping([ID]);" />
-      <div class="shipper-option-desc" id="shippingmethod[ID]"><!--[OPTION-SHIPPER]-->[OPTION-DESCRIPTION]</div>
+      <div class="shipper-option-desc"><!--[OPTION-SHIPPER]-->[OPTION-DESCRIPTION]</div>
       <div class="shipper-option-price2">[OPTION-PRICE2]</div>
       <div class="clear"></div>
     </div>

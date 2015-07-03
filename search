@@ -75,7 +75,13 @@
     <!--START: ITEM_TEMPLATE-->
     <div class="product-item alternative">
         <div class="img"><a href="product.asp?itemid=[catalogid]"><img src="[THUMBNAIL]" alt="[name]" id="qv_[catalogid]" /></a></div>
-        <div class="name"><a href="product.asp?itemid=[catalogid]">[name]</a></div>
+        <div class="name">
+          <a href="product.asp?itemid=[catalogid]">[name]</a>
+          <div class="info">[extra_field_2]</div>
+          <!--START: price2-->
+		<div class="retailprice">Normal Price: [price2]</div>
+		<!--END: price2-->
+        </div>
         <!--START: product_review--> 
         <!--START: product_review_average-->
         <div class="stars">
@@ -92,7 +98,7 @@
         <span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE]
         <div class="on-sale">[product_sale]</div>
         <!--END: SALEPRICE--></div>
-        <div class="status"><!--START: product_availability-->[availability] <!--END: product_availability--><!--START: freeshippingblock-->[freeshipping]<!--END: freeshippingblock--></div>
+        <!--START: product_availability--><div class="status">[availability]</div><!--END: product_availability--><!--START: freeshippingblock-->[freeshipping]<!--END: freeshippingblock-->
         <div class="action">
             <input type="button" value="[category_buyitlink]" onclick="window.location = 'add_cart.asp?quick=1&amp;item_id=[catalogid]'" class="btn" onmouseover="this.className='btn_over'" onmouseout="this.className='btn'" />
         </div>

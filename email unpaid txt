@@ -9,9 +9,16 @@ ____________________________________________________________________
 Order Information
 
 Order Number: [invoicenum_prefix][invoicenum]
-Order Date: [odate]
+Order Date (mm/dd/yyyy): [odate]
 Payment Type: [opaymethod]
 Order amount: [orderamount]
+
+Payment should be sent to:
+Bank: Standard Chartered Bank (SGD)
+Account No: 1108-341-052
+Bank Code: 7144
+Branch Code: 011
+Account Name: Barworks Wine & Spirits Pte Ltd
 
 Phone: [ophone]
 E-mail: [oemail]
@@ -19,19 +26,19 @@ E-mail: [oemail]
 Your billing information is:
 [ofirstname] [olastname] [ocompany]
 [oaddress] [oaddress2]
-[ocountry] [ozip]
+Singapore [ozip]
 
 Order Summary
 <!--START: shipment-->_____________________________________________________________________
-Shipping to:
+Delivery to:
 [oshipfirstname] [oshiplastname] [oshipcompany]
 [oshipaddress] [oshipaddress2]
-[oshipcountry] [oshipzip]
+Singapore [oshipzip]
 
 Shipping Method: [oshipmethod]
 <!--START: oshippeddate-->Shipped Date: [oshippeddate]<!--END: oshippeddate-->
 <!--START: trackingcode-->Tracking Number: [trackingcode]<!--END: trackingcode--><!--END: shipment--><!--START: product-->
-[itemname] [extra_field_3] [unitprice] X [numitems]  = [itemsubtotal]
+[itemname] [extra_field_2] [unitprice] X [numitems]  = [itemsubtotal]
 <!--END: product--><!--START: edownload--><a href="[store_url]/order_eproduct.asp?action=edownload&eid=[orderkey]">Click Here to download</a>
 or go to this link [store_url]/order_eproduct.asp?action=edownload&eid=[orderkey]<!--END: edownload-->
 _____________________________________________________________________

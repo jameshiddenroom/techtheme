@@ -228,7 +228,7 @@ String.prototype.trim = function () {
     <!--START: items-->
     <div class="row">
       <div class="invoice-id">[id]</div>
-      <div class="invoice-items">[itemname]&nbsp;<!--START: edownload--><span><a href="[store_url]/order_eproduct.asp?action=edownload&eid=[orderkey]">Click Here to Download</a></span><!--END: edownload--></div>
+      <div class="invoice-items">[itemname]&nbsp;[extra_field_2]<!--START: edownload--><span><a href="[store_url]/order_eproduct.asp?action=edownload&eid=[orderkey]">Click Here to Download</a></span><!--END: edownload--></div>
       <div class="invoice-price">[unitprice]</div>
       <div class="invoice-qty">[numitems]</div>
       <div class="invoice-total">[subtotal]</div>

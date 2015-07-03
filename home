@@ -34,20 +34,15 @@
             <div class="img"><a href="product.asp?itemid=[catalogid]"><img src="[THUMBNAIL]" alt="[name]" id="qv_[catalogid]" /></a></div>
             <div class="name"><a href="product.asp?itemid=[catalogid]">[name]</a>
                 <div class="size">[extra_field_2]</div>
-		<div class="price">
 		<!--START: price2-->
 		<div class="retailprice">Normal Price: [price2]</div>
 		<!--END: price2-->
-		<!--START: ITEMPRICE--> 
-		<span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE] <span class="incgst">incl GST</span>
-		<!--END: ITEMPRICE--> 
 		<!--START: SALEPRICE-->
 		<del class="price2">[ITEMPRICE]&nbsp;</del>
 		<span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE]
 		<div class="on-sale">[product_sale]</div>
 		<!--END: SALEPRICE-->
 		<!--START: product_availability--><div class="status">[availability] </div><!--END: product_availability--><!--START: freeshippingblock-->[freeshipping]<!--END: freeshippingblock-->
-		</div>
             </div>
             <!--START: product_review--> 
             <div class="stars">
@@ -57,6 +52,11 @@
             <!--END: product_review_average--> 
             </div>
             <!--END: product_review-->
+		<!--START: ITEMPRICE--> 
+		<div class="price">
+		  <span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE] <span class="incgst">incl GST</span>
+		</div>
+		<!--END: ITEMPRICE--> 
             <div class="action">
 		<button type="button" value="[category_buyitlink]" class="btn" onclick="window.location = 'add_cart.asp?quick=1&amp;item_id=[catalogid]'"><i class="icon-basket"></i> [product_addtocart]</button>
             </div>

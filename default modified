@@ -30,6 +30,12 @@ body {
 img {
 	border: 0;
 }
+p {
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
 input,
 textarea,
 select,
@@ -88,9 +94,16 @@ div.searchlight-results-wrapper {
 /*          STYLES USED ON THE FRAME OF THE WEBSITE (HEADER, LEFT NAV, RIGHT NAV AND FOOTER)           */
 /*******************************************************************************************************/
 
+.store-txt {
+  float: left;
+  text-align: left;
+  margin-top: 10px;
+}
+
 /*store-name:: Store Name.*/		 
 .store-name {
-    font-family: 'Open Sans', sans-serif;
+  display: inline;  
+  font-family: 'Open Sans', sans-serif;
     color: #fff;
 	font-size: 40px;
 	font-weight: 700;
@@ -121,7 +134,7 @@ div.searchlight-results-wrapper {
 	height: 1000px;
 }
 .breadcrumbs {
-	font-family: 'Open Sans', sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 /*menu-headers:: Controls the way the menu titles look. For example: Categories, Browse By Price, Top Sellers, etc.*/ 
@@ -247,7 +260,7 @@ div.searchlight-results-wrapper {
 /*price2:: Controls the way the product's price display in the top sellers and new releases sections.*/ 
 .price2 {
 	font-size: 16px;
-	color: #000;
+	color: #666;
 	font-weight: bold;
 	padding: 10px 0 0 0;
 }
@@ -422,6 +435,7 @@ td {
 	font-size: 13px;
 	color: #383733;
 	font-weight: 400;
+	margin: 10px 0 10px 0;
 }
 /*itemTitle:: Controls the name of the Product.*/ 
 .item-title {
@@ -482,14 +496,14 @@ td {
 	-moz-transition: all 0.3s;
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
-	background: #59b4fa; /* Old browsers */
-	background: -moz-linear-gradient(top,  #59b4fa 0%, #4898d6 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#59b4fa), color-stop(100%,#4898d6)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #59b4fa 0%,#4898d6 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #59b4fa 0%,#4898d6 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #59b4fa 0%,#4898d6 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #59b4fa 0%,#4898d6 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59b4fa', endColorstr='#4898d6',GradientType=0 ); /* IE6-9 */	
+	background: #69941D; /* Old browsers */
+	background: -moz-linear-gradient(top,  #C0DA9F 0%, #69941D 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C0DA9F), color-stop(100%,#69941D)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #C0DA9F 0%,#69941D 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #C0DA9F 0%,#69941D 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #C0DA9F 0%,#69941D 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #C0DA9F 0%,#69941D 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C0DA9F', endColorstr='#69941D',GradientType=0 ); /* IE6-9 */	
 }
 /*btn_over:: Controls the buttons when a user mouses over them, (ONLY if it is not using and image).*/ 
 .btn_over, button:hover {
@@ -583,7 +597,7 @@ td {
 	background: #fefefe;
 	font-weight: 400;
 	font-size: 12px;
-	color: #a3a3a3;
+	color: #000;
     margin: 0;
 	padding: 8px 12px;
 	border-radius: 0;
@@ -899,20 +913,23 @@ li.m-search {
 }
 header {
 	position: relative;
-	height: 130px;
+	// height: 130px;
 	background: #69941D;
+	padding-bottom: 5px;
 }
 header .wrapper {
-	height: 130px;
+	// height: 130px;
 	clear: both;
 }
 #logo {
-	margin-top: 3%;
+	margin-top: 20px;
 	float: left;
 }
 #logo img {
 	max-width: 100%;
 	max-height: 94px;
+  float: left;
+	margin-top: 5px;
 }
 #cart {
 	background: url('../images/shopping-cart-white.png') no-repeat left center;
@@ -963,6 +980,7 @@ aside {
     display: block;
 }
 aside#leftBar {
+font-family: Arial, Helvetica, sans-serif;
 	margin-right: 25px;
 }
 aside#rightBar {
@@ -1059,7 +1077,7 @@ aside .module .div {
 	text-align: right;
 }
 #modNewReleases, #modManufacturer, #modPrice, #modTopSellers, #modNewsletter, #modMyCats {
-	border: 1px solid #A1A1A1;
+	border: 1px solid #BABABA;
 background: #fff;
 	-webkit-border-top-left-radius: 10px;
 	-webkit-border-top-right-radius: 10px;
@@ -1097,7 +1115,7 @@ font-weight: bold;
 }
 footer {
 	/*margin-top: 50px; Hide */
-	background: #2d83d5;
+	background: #303A09;
 	padding: 0;
 	margin: 0;
 	text-align: left;
@@ -1324,6 +1342,7 @@ footer .col3 {
 	--------------------------	*/
 #listing0 h1 {
     font-size: 18px;
+  margin-bottom: 0;
 }
 
 ul#desktopMenu {
@@ -1422,7 +1441,7 @@ font-weight: normal;
 
 .product-item {
 background: #fff;
-border: 1px solid #A1A1A1;
+border: 1px solid #BABABA;
 padding: 5px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -1497,6 +1516,26 @@ color: #222222;
   padding-left: 0;
 }
 
+.secondary .savings {
+  margin-bottom: 6px;
+}
+
+.secondary .social-mediaBlock {
+  margin: 10px 0 10px 0;
+  height: 20px;
+  width: 300px;
+}
+
+.secondary .social-bookmarking {
+  margin-bottom: 0px;
+}
+
+.secondary .likebutton {
+  height: 20px;
+  margin-top: 3px;
+  margin-bottom: 0px;
+}
+
 .loginField label {
   width: 140px;
 }
@@ -1520,18 +1559,23 @@ color: #222222;
 
 #listing0 .pricingBlock {
   float: left;
+  margin-right: 5px;
   width: 50%;
+  margin-bottom: 15px;
 }
 
 #listing0 .quantityBlock {
   float: left;
   padding: 5px;
   border-bottom: 0;
+  text-align: center;
+  font-weight: bold;
 }
 
 #listing0 .quantity-table {
-  border: 1px solid #000;
+  border: 1px solid #BABABA;
   border-radius: 5px;
+  font-weight: normal;
 }
 
 #listing0 .quantity-table .title-header {
@@ -1589,6 +1633,11 @@ color: #222222;
   margin-top: 0;
   text-align: right;
 }
+
+#extrapage A, #extrapage A:visited {
+  font-weight: bold;
+}
+
 
 
 /*	Responsive Navigation Menu
@@ -1843,11 +1892,20 @@ ul#desktopMenu {
 	float: none;
 	margin-left: 0;
 	text-align: center;
+	margin-top: 0;
 }
 #logo img {
-	max-width: 80%;
-	margin-top: 15px;
+	max-width: 70px;
+	margin-top: 5px;
 }
+#logo .store-name {
+	font-size: 30px;
+}
+
+#logo .store-slogan {
+	font-size: 14px;
+}
+
 #searchBox {
 	width: 100%;
 	padding: 0 2em;

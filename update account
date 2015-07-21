@@ -88,19 +88,19 @@
         <input size="40" name="billing_address2" value="[billing_address2]" tabindex="9" class="txtBoxStyle" />
         <div class="clear"></div>
       </div>
-      <div class="updaccField">
+      <div class="updaccField" style="display: none;">
         <label for="billing_city">City</label>
         <input size="40" name="billing_city" value="[billing_city]" tabindex="10" class="txtBoxStyle" />
         <div class="clear"></div>
       </div>
-      <div class="updaccField">
+      <div class="updaccField" style="display: none;">
         <label for="billing_state">State</label>
         <select id="billing_state" name="billing_state" tabindex="11" class="txtBoxStyle">
         </select>
         <div class="clear"></div>
       </div>
       <div class="updaccField">
-        <label for="billing_zip">Zip Code</label>
+        <label for="billing_zip">Post Code</label>
         <input size="40" name="billing_zip" value="[billing_zip]" tabindex="12" class="txtBoxStyle" />
         <div class="clear"></div>
       </div>
@@ -147,19 +147,19 @@
         <input size="40" name="shipping_address2" value="[shipping_address2]" tabindex="19" class="txtBoxStyle" />
         <div class="clear"></div>
       </div>
-      <div class="updaccField">
+      <div class="updaccField" style="display: none;">
         <label for="shipping_city">City</label>
         <input size="40" name="shipping_city" value="[shipping_city]" tabindex="20" class="txtBoxStyle" />
         <div class="clear"></div>
       </div>
-      <div class="updaccField">
+      <div class="updaccField" style="display: none;">
         <label for="shipping_state">State</label>
         <select id="shipping_state" name="shipping_state" tabindex="21" class="txtBoxStyle">
         </select>
         <div class="clear"></div>
       </div>
       <div class="updaccField">
-        <label for="shipping_zip">Zip Code</label>
+        <label for="shipping_zip">Post Code</label>
         <input size="40" name="shipping_zip" value="[shipping_zip]" tabindex="22" class="txtBoxStyle" />
         <div class="clear"></div>
       </div>
@@ -270,8 +270,8 @@
         if (objForm.billing_city.value.length > 50)
             strMsg += " - Maximum length for this field is 50 characters.\n";
 
-        if (objForm.billing_state.value.trim() == "")
-            strMsg += " - Please enter your Billing [CustomerInfo_state].\n";
+        //if (objForm.billing_state.value.trim() == "")
+        //    strMsg += " - Please enter your Billing [CustomerInfo_state].\n";
         if (objForm.billing_state.value.length > 50)
             strMsg += " - Maximum length for this field is 50 characters.\n";
 
@@ -307,8 +307,8 @@
         if (objForm.shipping_city.value.length > 50)
             strMsg += " - Maximum length for this field is 50 characters.\n";
 
-        if (objForm.shipping_state.value.trim() == "")
-            strMsg += " - Please enter your Shipping [CustomerInfo_state].\n";
+        //if (objForm.shipping_state.value.trim() == "")
+        //    strMsg += " - Please enter your Shipping [CustomerInfo_state].\n";
         if (objForm.shipping_state.value.length > 50)
             strMsg += " - Maximum length for this field is 50 characters.\n";
 

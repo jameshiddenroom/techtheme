@@ -147,10 +147,10 @@
 		<!--END: SAVINGS--> 
 		<!--END: price2--> 
 		<!--START: ITEMPRICE-->
-		<div class="yourprice price"><span itemprop="price" id="price">[price]</span> <span class="incgst">incl GST</span></div>
+		<div class="yourprice price"><span itemprop="price" id="price">[price]</span></div>
 		<!--END: ITEMPRICE--> 
 		<!--START: SALEPRICE-->
-		<div class="saleprice price">[product_onsale]<span itemprop="price" id="price">[saleprice]</span> <span class="incgst">incl GST</span></div>
+		<div class="saleprice price">[product_onsale]<span itemprop="price" id="price">[saleprice]</span></div>
 		<!--END: SALEPRICE-->
 		<div class="clear"></div>
 	  </div>

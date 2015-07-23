@@ -1014,7 +1014,7 @@
 	  </div>
 	  <!--START: related_items0-->
 		  <div class="product-item related_items0 alternative">
-	            <div class="img"><a href="product.asp?itemid=[catalogid]"><img src="[THUMBNAIL]" alt="[name]" id="qv_[catalogid]" /></a></div>
+	            <div class="img"><img src="[THUMBNAIL]" alt="[name]" id="qv_[catalogid]" /></div>
 	            <div class="name"><a href="product.asp?itemid=[catalogid]">[name]</a>
 			<div class="size">[extra_field_2]</div>
 			<!--START: price2-->
@@ -1041,7 +1041,7 @@
 	            </div>
 	            <!--END: product_review-->
 	            <div class="action">
-			<a href="add_cart.asp?quick=1&amp;item_id=[catalogid]">ADD TO CART</a> | <a href="product.asp?itemid=[catalogid]">DETAILS</a>
+	              <button type="button" value="Add To Cart" class="btn" onclick="window.location = 'add_cart.asp?quick=1&amp;item_id=[catalogid]'"><i class="icon-basket"></i> Add to Cart</button>
 	            </div>
 		<div class="clear"></div>
 		</div>

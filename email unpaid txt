@@ -42,7 +42,7 @@ Shipping Method: [oshipmethod]
 <!--END: product--><!--START: edownload--><a href="[store_url]/order_eproduct.asp?action=edownload&eid=[orderkey]">Click Here to download</a>
 or go to this link [store_url]/order_eproduct.asp?action=edownload&eid=[orderkey]<!--END: edownload-->
 _____________________________________________________________________
-Subtotal (incl GST): [osubtotal]
+Subtotal: [osubtotal]
 Discount: [totaldiscounts]
 Shipping: [oshipcost]
 Balance Due: [orderamount]

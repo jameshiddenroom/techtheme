@@ -32,9 +32,10 @@
       <div class="titles">[category_Header-specials]</div>
       <!--START: FEATURE_ITEMS--> 
       <!--START: FEATURE_ITEM_TEMPLATE_0-->
-          <div class="product-item item-template-0 alternative">
-            <div class="img"><a href="product.asp?itemid=[catalogid]"><img src="[THUMBNAIL]" alt="[name]" id="qv_[catalogid]" /></a></div>
-            <div class="name"><img src="/assets/images/feature.png"><a href="product.asp?itemid=[catalogid]">[name]</a>
+          <div class="product-item item-template-0 alternative product-itemhover">
+            <a href="product.asp?itemid=[catalogid]">
+            <div class="img"><img src="[THUMBNAIL]" alt="[name]" id="qv_[catalogid]" /></div>
+            <div class="name"><img src="/assets/images/feature.png">[name]
 		<div class="size">[extra_field_2]</div>
 		
 		<!--START: product_availability--><div class="price"><div class="status">[availability] </div></div><!--END: product_availability--><!--START: freeshippingblock--><div class="price">[freeshipping]</div><!--END: freeshippingblock-->
@@ -43,11 +44,11 @@
 		<!--END: price2-->
             </div>
 		<!--START: ITEMPRICE--> 
-		<div class="price"><span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE] <span class="incgst">incl GST</span></div>
+		<div class="price"><span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE]</div>
 		<!--END: ITEMPRICE--> 
 		<!--START: SALEPRICE-->
 		<del class="price2">[ITEMPRICE]&nbsp;</del>
-		<span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE] <span class="incgst">incl GST</span>
+		<span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE]
 		<div class="on-sale">[product_sale]</div>
 		<!--END: SALEPRICE-->
             <!--START: product_review--> 
@@ -58,6 +59,7 @@
             <!--END: product_review_average--> 
             </div>
             <!--END: product_review-->
+            </a>
             <div class="action">
 		<button type="button" value="[category_buyitlink]" class="btn" onclick="window.location = 'add_cart.asp?quick=1&amp;item_id=[catalogid]'"><i class="icon-basket"></i> [product_addtocart]</button>
             </div>
@@ -247,24 +249,25 @@
       <div class="clear"></div>
       <!--START: CATEGORY_ITEMS-->
       <!--START: ITEM_TEMPLATE_0-->
-          <div class="product-item item-template-0 alternative">
-            <div class="img"><a href="product.asp?itemid=[catalogid]"><img src="[THUMBNAIL]" alt="[name]" id="qv_[catalogid]" /></a></div>
-            <div class="name"><a href="product.asp?itemid=[catalogid]">[name]</a>
-		<div class="size">[extra_field_2]</div>
-		
-		<!--START: product_availability--><div class="price"><div class="status">[availability] </div></div><!--END: product_availability--><!--START: freeshippingblock--><div class="price">[freeshipping]</div><!--END: freeshippingblock-->
-		<!--START: price2-->
-		<div class="retailprice">Normal Price: [price2]</div>
-		<!--END: price2-->
+          <div class="product-item item-template-0 alternative product-itemhover">
+            <a href="product.asp?itemid=[catalogid]">
+            <div class="img"><img src="[THUMBNAIL]" alt="[name]" id="qv_[catalogid]" /></div>
+            <div class="name">
+              [name]
+              <div class="size">[extra_field_2]</div>
+              <!--START: product_availability--><div class="price"><div class="status">[availability] </div></div><!--END: product_availability--><!--START: freeshippingblock--><div class="price">[freeshipping]</div><!--END: freeshippingblock-->
+              <!--START: price2-->
+              <div class="retailprice">Normal Price: [price2]</div>
+              <!--END: price2-->
             </div>
-		<!--START: ITEMPRICE--> 
-		<div class="price"><span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE] <span class="incgst">incl GST</span></div>
-		<!--END: ITEMPRICE--> 
-		<!--START: SALEPRICE-->
-		<del class="price2">[ITEMPRICE]&nbsp;</del>
-		<span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE] <span class="incgst">incl GST</span>
-		<div class="on-sale">[product_sale]</div>
-		<!--END: SALEPRICE-->
+            <!--START: ITEMPRICE--> 
+            <div class="price"><span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE]</div>
+            <!--END: ITEMPRICE--> 
+            <!--START: SALEPRICE-->
+            <del class="price2">[ITEMPRICE]&nbsp;</del>
+            <span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE]
+            <div class="on-sale">[product_sale]</div>
+            <!--END: SALEPRICE-->
             <!--START: product_review--> 
             <div class="stars">
             <!--START: product_review_average-->
@@ -273,6 +276,7 @@
             <!--END: product_review_average--> 
             </div>
             <!--END: product_review-->
+            </a>
             <div class="action">
 		<button type="button" value="[category_buyitlink]" class="btn" onclick="window.location = 'add_cart.asp?quick=1&amp;item_id=[catalogid]'"><i class="icon-basket"></i> [product_addtocart]</button>
             </div>

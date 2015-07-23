@@ -54,7 +54,7 @@
             <!--END: product_review-->
 		<!--START: ITEMPRICE--> 
 		<div class="price">
-		  <span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE] <span class="incgst">incl GST</span>
+		  <span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE]
 		</div>
 		<!--END: ITEMPRICE--> 
             <div class="action">

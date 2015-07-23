@@ -66,7 +66,7 @@ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="assets/templates
       <div class="totalinstructions ">[checkout3_totalinstructions]</div>
       <!--END: total_template_noshipping--> 
       <!--START: total_template-->
-      <div class="total_items">[itemCount] Item(s) (incl GST)</div>
+      <div class="total_items">[itemCount] Item(s)</div>
       <div class="total_subtotal">[SUBTOTAL]</div>
       <div class="clear"></div>
       <!--START: DISCOUNTS-->
@@ -812,9 +812,9 @@ body {
         <!--START: KLARNA_INVOICE_DE_BLOCK-->
         <div id="afm_banner">
         <input type="checkbox" name="klarna_afm_de_invoice" value="1" />
-        Mit der Übermittlung der für die Abwicklung der gewählten Klarna Zahlungsmethode und einer Identitäts- und 
-        Bonitätsprüfung erforderlichen Daten an Klarna bin ich einverstanden. Meine <a href="https://online.klarna.com/consent_de.yaws" target="_blank">Einwilligung</a> kann ich jederzeit mit Wirkung für die Zukunft widerrufen. 
-        Es gelten die AGB des Händlers. </div>
+        Mit der Ãœbermittlung der fÃ¼r die Abwicklung der gewÃ¤hlten Klarna Zahlungsmethode und einer IdentitÃ¤ts- und 
+        BonitÃ¤tsprÃ¼fung erforderlichen Daten an Klarna bin ich einverstanden. Meine <a href="https://online.klarna.com/consent_de.yaws" target="_blank">Einwilligung</a> kann ich jederzeit mit Wirkung fÃ¼r die Zukunft widerrufen. 
+        Es gelten die AGB des HÃ¤ndlers. </div>
         <!--END: KLARNA_INVOICE_DE_BLOCK-->
         <div class="clear"></div>
     </div>
@@ -878,9 +878,9 @@ body {
         <!--START: KLARNA_ACCOUNT_DE_BLOCK-->
         <div id="afm_banner">
         <input type="checkbox" name="klarna_afm_de_account" value="1" />
-        Mit der Übermittlung der für die Abwicklung der gewählten Klarna Zahlungsmethode und einer Identitäts- und 
-        Bonitätsprüfung erforderlichen Daten an Klarna bin ich einverstanden. Meine <a href="https://online.klarna.com/consent_de.yaws" target="_blank">Einwilligung</a> kann ich jederzeit mit Wirkung für die Zukunft widerrufen. 
-        Es gelten die AGB des Händlers. </div>
+        Mit der Ãœbermittlung der fÃ¼r die Abwicklung der gewÃ¤hlten Klarna Zahlungsmethode und einer IdentitÃ¤ts- und 
+        BonitÃ¤tsprÃ¼fung erforderlichen Daten an Klarna bin ich einverstanden. Meine <a href="https://online.klarna.com/consent_de.yaws" target="_blank">Einwilligung</a> kann ich jederzeit mit Wirkung fÃ¼r die Zukunft widerrufen. 
+        Es gelten die AGB des HÃ¤ndlers. </div>
         <!--END: KLARNA_ACCOUNT_DE_BLOCK--> 
         <!--START: KLARNA_ACCOUNT_NL_BLOCK-->
         <div id="afm_banner"> <img src="assets/templates/common/images/balk_afm3-jpg.jpg" width="320" /> </div>

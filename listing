@@ -379,14 +379,14 @@
 		<!--START: price2-->
 		<div class="retailprice">Normal Price: [price2]</div>
 		<!--START: SAVINGS-->
-		<div class="savings">[product_savings]<span>[savings]</span><span>([savings_percentage]%)</span></div>
+		<div class="savings">[product_savings] [savings] ([savings_percentage]%)</div>
 		<!--END: SAVINGS--> 
 		<!--END: price2--> 
 		<!--START: ITEMPRICE-->
-		<div class="price"><span itemprop="price" id="price">[price]</span> <span class="incgst">incl GST</span></div>
+		<div class="price"><span itemprop="price" id="price">[price]</span></div>
 		<!--END: ITEMPRICE--> 
 		<!--START: SALEPRICE-->
-		<div class="saleprice price">[product_onsale]<span itemprop="price" id="price">[saleprice]</span> <span class="incgst">incl GST</span></div>
+		<div class="saleprice price">[product_onsale]<span itemprop="price" id="price">[saleprice]</span></div>
 		<!--END: SALEPRICE-->
 		<div class="clear"></div>
 	  </div>
@@ -1023,11 +1023,11 @@
 	            </div>
 			<div class="price">
 			<!--START: ITEMPRICE--> 
-			<span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE] <span class="incgst">incl GST</span>
+			<span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE]
 			<!--END: ITEMPRICE--> 
 			<!--START: SALEPRICE-->
 			<del class="price2">[ITEMPRICE]&nbsp;</del>
-			<span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE] <span class="incgst">incl GST</span>
+			<span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE]
 			<div class="on-sale">[product_sale]</div>
 			<!--END: SALEPRICE-->
 			<!--START: product_availability--><div class="status">[availability] </div><!--END: product_availability--><!--START: freeshippingblock-->[freeshipping]<!--END: freeshippingblock-->
@@ -1068,12 +1068,12 @@
 			</div>
 			<!--END: product_review-->
 			<div class="price"><!--START: ITEMPRICE--> 
-			<span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE] <span class="incgst">incl GST</span>
+			<span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE]
 			<!--END: ITEMPRICE--> 
 			<!--START: SALEPRICE-->
 			<div class="on-sale">[product_sale]</div>
 			<del class="price2">[ITEMPRICE]&nbsp;</del>
-			<span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE] <span class="incgst">incl GST</span>
+			<span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE]
 			<!--END: SALEPRICE--></div>
 			<div class="status"><!--START: product_availability-->[availability] <!--END: product_availability--><!--START: freeshippingblock-->[freeshipping]<!--END: freeshippingblock--></div>
 			<div class="action">
@@ -1101,11 +1101,11 @@
 			<div class="name"><a href="product.asp?itemid=[catalogid]">[name]</a><div class="info">[extra_field_2]</div></div>
 			
 			<div class="price"><!--START: ITEMPRICE--> 
-			<span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE] <span class="incgst">incl GST</span>
+			<span class="hidden">[product_yourprice]&nbsp;</span>[ITEMPRICE]
 			<!--END: ITEMPRICE--> 
 			<!--START: SALEPRICE-->
 			<del class="price2">[ITEMPRICE]&nbsp;</del>
-			<span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE] <span class="incgst">incl GST</span>
+			<span class="hidden">[product_onsale]&nbsp;</span>[ITEMSALEPRICE]
 			<div class="on-sale">[product_sale]</div>
 			<!--END: SALEPRICE--></div>
 			<div class="action">

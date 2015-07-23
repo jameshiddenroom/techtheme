@@ -111,22 +111,22 @@
   <div class="shippingInfoBlock"> 
     <!--START: shipping_info-->
     <div class="label">Shipping Method:</div>
-    <div class="text">[oshipmethod]</div>
+    <div class="text"> [oshipmethod]</div>
     <div class="clear"></div>
     <!--START: trackingcode-->
     <div class="label">Tracking Number:</div>
-    <div class="text">[trackingcode]</div>
+    <div class="text"> [trackingcode]</div>
     <div class="clear"></div>
     <!--END: trackingcode--> 
     <!--START: oshippeddate-->
     <div class="label">Shipped on:</div>
-    <div class="text">[oshippeddate]</div>
+    <div class="text"> [oshippeddate]</div>
     <div class="clear"></div>
     <!--END: oshippeddate--> 
     <!--END: shipping_info--> 
     <!--START: opaymethod-->
     <div class="label">Payment Type:</div>
-    <div class="text">[opaymethod]</div>
+    <div class="text"> [opaymethod]</div>
     <div class="clear"></div>
     <!--END: opaymethod--> 
   </div>
@@ -176,7 +176,7 @@
         <!--END: invoice_terms--> 
       </div>
       <div class="right-col">
-        <div class="label">SubTotal (incl GST):</div>
+        <div class="label">SubTotal:</div>
         <div class="text">[subtotal]</div>
         <div class="clear"></div>
         <div class="label">Discount:</div>
@@ -197,7 +197,7 @@
         <div class="label">Shipping:</div>
         <div class="text">[shipping]</div>
         <div class="clear"></div>
-        <div class="label">Total (incl GST):</div>
+        <div class="label">Total:</div>
         <div class="text">[total]</div>
         <div class="clear"></div>
       </div>

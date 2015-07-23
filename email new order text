@@ -8,7 +8,7 @@ ____________________________________________________________________
 Order Information
 
 Order Number: [invoicenum_prefix][invoicenum]
-Order Date: [odate]
+Order Date (mm/dd/yyyy): [odate]
 Payment Type: [opaymethod]
 Order amount: [orderamount]
 
@@ -30,16 +30,16 @@ Singapore [oshipzip]
 Shipping Method: [oshipmethod]
 <!--START: oshippeddate-->Shipped Date: [oshippeddate]<!--END: oshippeddate-->
 <!--START: trackingcode-->Tracking Number: [trackingcode]<!--END: trackingcode--><!--END: shipment--><!--START: product-->
-[itemname] [extra_field_3] [unitprice] X [numitems]  = [itemsubtotal]
+[itemname] [extra_field_2] [unitprice] X [numitems]  = [itemsubtotal]
 <!--END: product-->
 <!--START: edownload-->
 To download go to this link [store_url]/order_eproduct.asp?action=edownload&eid=[orderkey]
 <!--END: edownload-->
 _____________________________________________________________________
-Subtotal (incl GST): [osubtotal]
+Subtotal: [osubtotal]
 Discount: [totaldiscounts]
 Shipping: [oshipcost]
-Total (incl GST): [orderamount]
+Total: [orderamount]
 _____________________________________________________________________
 <!--START: discount_block-->Discounts / Promotions / Gift Certificates
 <!--START: discounts-->- [promotion_name] - [discount_amount]

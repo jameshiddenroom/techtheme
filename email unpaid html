@@ -406,11 +406,9 @@ font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: 
                                 <strong>Balance Due:</strong> [orderamount]<br /><br />
                                 <strong>Payment should be sent to:</strong><br />
                                 <table class="accno">
-                                <tr><td><strong>Bank:</strong></td><td>Standard Chartered Bank (SGD)</td></tr>
-                                <tr><td><strong>Account No:</strong></td><td>1108-341-052</td></tr>
-                                <tr><td><strong>Bank Code:</strong></td><td>7144</td></tr>
-                                <tr><td><strong>Branch Code:</strong></td><td>011</td></tr>
-                                <tr><td><strong>Account Name:</strong></td><td>Barworks Wine & Spirits Pte Ltd</td></tr>
+                                <tr><td><strong>Bank:</strong></td><td>OCBC</td></tr>
+                                <tr><td><strong>Account Name:</strong></td><td>Oak & Barrel Pte Ltd</td></tr>
+                                <tr><td><strong>Account No:</strong></td><td>531795813001</td></tr>
                                 </table>
                                 Please quote "Order No [invoicenum_prefix][invoicenum]"
                             </p>

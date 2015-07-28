@@ -14,11 +14,10 @@ Payment Type: [opaymethod]
 Order amount: [orderamount]
 
 Payment should be sent to:
-Bank: Standard Chartered Bank (SGD)
-Account No: 1108-341-052
-Bank Code: 7144
-Branch Code: 011
-Account Name: Barworks Wine & Spirits Pte Ltd
+Bank: OCBC
+Account Name: Oak & Barrel Pte Ltd
+Account Number: 531795813001
+
 
 Phone: [ophone]
 E-mail: [oemail]

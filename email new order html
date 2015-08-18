@@ -429,6 +429,7 @@ background: #CC0000 !important;
                                     <strong>Delivery Method</strong><br />
                                     [oshipmethod]<br /><br /><!--START: trackingcode--><strong>Tracking Number</strong><br /><a href="[store_url]/shiptracking.asp?trackno=[trackingcode]" style="color: #50b848; text-decoration: none;">[trackingcode]</a>
                                     <!--END: trackingcode-->
+                                    If you have selected to collect your order from our warehouse, our warehouse address is: 18 Sin Ming Lane #05-09/10 Midview City (S) 573960.<br />You will recieve an SMS when your order is ready for collection.
                                 </td>
                             </tr></table></td>
                     </tr></table><!--END: shipment--><table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;"><tr style="text-align: right; vertical-align: top; padding: 0;" align="right"><td style="text-align: right; vertical-align: middle; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 17px; font-size: 12px; margin: 0; padding: 0px 0px 10px;" align="right" valign="middle">

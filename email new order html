@@ -155,6 +155,9 @@ background: #0087bb !important;
 table.google-plus:hover td {
 background: #CC0000 !important;
 }
+.accno td {
+font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 17px; font-size: 12px;
+}
 @media only screen and (max-width: 600px) {
   table[class="body"] img {
     width: auto !important; height: auto !important;
@@ -341,7 +344,7 @@ background: #CC0000 !important;
                               <!--START: invoicelogo-->
                                 <img src="[store_url]/[invoicelogo]" alt="[store_name]" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block;" align="left" /><!--END: invoicelogo--></td>
                             <td class="six sub-columns last" style="text-align: right; vertical-align: middle; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; min-width: 0px; width: 50%; color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 17px; font-size: 12px; margin: 0; padding: 0px 0px 10px;" align="right" valign="middle">
-                              <span class="template-label" style="color: #333; font-weight: bold; font-size: 11px;">Order Confirmation</span>
+                              <span class="template-label" style="color: #333; font-weight: bold; font-size: 11px;">Order Notification</span>
                             </td>
                             <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 17px; font-size: 12px; margin: 0; padding: 0;" align="left" valign="top"></td>
                           </tr></table></td>
@@ -354,7 +357,7 @@ background: #CC0000 !important;
 
                     <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 17px; font-size: 12px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
                           <h1 style="color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 1.3; word-break: normal; font-size: 40px; margin: 0; padding: 0;" align="left">[ofirstname] [olastname],</h1>
-                          <p style="color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 17px; font-size: 12px; margin: 0 0 10px; padding: 0;" align="left">This email confirms that your order was received at [store_name]. You will receive an additional email once your order is shipped.  Contact us if you have any questions about your order.<br /><br />
+                          <p style="color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 17px; font-size: 12px; margin: 0 0 10px; padding: 0;" align="left">Thank you for your order. Please contact us if you have any questions.<br /><br />
                                Thanks for using [store_name].</p>
                         </td>
                         <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 17px; font-size: 12px; margin: 0; padding: 0;" align="left" valign="top"></td>
@@ -376,7 +379,7 @@ background: #CC0000 !important;
                                 Phone: [ophone]<br /><!--END: ophone-->
                                 [oaddress] <br /><!--START: oaddress2-->
                                 [oaddress2]<br /><!--END: oaddress2-->
-                                Singapore [ozip]
+                                [ocountry] [ozip]
                             </p>
                         </td>
                         <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 17px; font-size: 12px; margin: 0; padding: 0;" align="left" valign="top"></td>
@@ -398,8 +401,16 @@ background: #CC0000 !important;
                       </tr></table><table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 17px; font-size: 12px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
                             <h6 style="color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 1.3; word-break: normal; font-size: 20px; margin: 0; padding: 0;" align="left">Payment Information</h6>
                             <hr style="min-height: 1px; color: #e9e8e6; width: 100%; height: 1px; background: #e9e8e6; border: 0 none;" /><p style="color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 17px; font-size: 12px; margin: 0 0 10px; padding: 0;" align="left">
-                                <strong>Payment Method</strong><br />
-                                [opaymethod]
+                                <strong>Payment Method:</strong> [opaymethod]
+                                <br /><br />
+                                <strong>Balance Due:</strong> [orderamount]<br /><br />
+                                <strong>Payment should be sent to:</strong><br />
+                                <table class="accno">
+                                <tr><td><strong>Bank:</strong></td><td>OCBC</td></tr>
+                                <tr><td><strong>Account Name:</strong></td><td>Oak & Barrel Pte Ltd</td></tr>
+                                <tr><td><strong>Account Number:</strong></td><td>531795813001</td></tr>
+                                </table>
+                                Please quote "Order No [invoicenum_prefix][invoicenum]"
                             </p>
                         </td>
                         <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 17px; font-size: 12px; margin: 0; padding: 0;" align="left" valign="top"></td>
@@ -415,13 +426,13 @@ background: #CC0000 !important;
                         </tr></table><hr style="min-height: 1px; color: #e9e8e6; width: 100%; height: 1px; background: #e9e8e6; border: 0 none;" /><!--END: product--><!--START: shipment--><table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; top: 0px; left: 0px; padding: 0px;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="wrapper" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 17px; font-size: 12px; margin: 0; padding: 10px 20px 0px 0px;" align="left" valign="top">
 
                         <table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 17px; font-size: 12px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
-                                    <strong>Delivery To</strong><br />
+                                    <strong>Deliver To</strong><br />
                                     [oshipfirstname] [oshiplastname]
                                     <!--START: oshipcompany-->
                                     [oshipcompany]
                                     <!--END: oshipcompany-->
                                     <br />
-                                    [oshipaddress] [oshipaddress2]<br />Singapore [oshipzip]<br /><br /><!--START: oshippeddate--><strong>Shipped Date</strong><br />[oshippeddate]<!--END: oshippeddate-->
+                                    [oshipaddress] [oshipaddress2],<br />[oshipcountry] [oshipzip]<br /><br /><!--START: oshippeddate--><strong>Shipped Date</strong><br />[oshippeddate]<!--END: oshippeddate-->
                                 </td>
                             </tr></table></td>
                         <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 17px; font-size: 12px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
@@ -433,19 +444,9 @@ background: #CC0000 !important;
                                 </td>
                             </tr></table></td>
                     </tr></table><!--END: shipment--><table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;"><tr style="text-align: right; vertical-align: top; padding: 0;" align="right"><td style="text-align: right; vertical-align: middle; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 17px; font-size: 12px; margin: 0; padding: 0px 0px 10px;" align="right" valign="middle">
-                                <strong>Subtotal: </strong>[osubtotal]<br /><strong>Discount:</strong> [totaldiscounts]<br /><strong>Shipping:</strong> [oshipcost]<br /><strong>Total:</strong> [orderamount]
+                                <strong>Subtotal: </strong>[osubtotal]<br /><strong>Discount:</strong> [totaldiscounts]<br /><strong>Shipping:</strong> [oshipcost]<br /><strong>Balance Due:</strong> [orderamount]
                             </td>
-                        </tr></table><!--START: edownload--><table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 17px; font-size: 12px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
-                                <center style="width: 100%; min-width: 580px;">
-                                <table class="button" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; overflow: hidden; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #ffffff; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 17px; font-size: 12px; display: block; width: auto !important; background: #50b848; margin: 0; padding: 8px 0; border: 1px solid #2284a1;" align="center" bgcolor="#50b848" valign="top">
-                                            <a href="[store_url]/order_eproduct.asp?action=edownload&amp;eid=[orderkey]" style="color: #ffffff; text-decoration: none; font-weight: bold; font-family: Helvetica, Arial, sans-serif; font-size: 16px;">Click here to Download</a>
-                                        </td>
-                                    </tr></table><hr style="min-height: 1px; color: #e9e8e6; width: 100%; height: 1px; background: #e9e8e6; border: 0 none;" />
-                                or go to this link [store_url]/order_eproduct.asp?action=edownload&amp;eid=[orderkey]
-                                </center>
-                            </td>
-                            <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 17px; font-size: 12px; margin: 0; padding: 0;" align="left" valign="top"></td>
-                        </tr></table><!--END: edownload--><br /><!--START: discount_block--><h6 style="color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 1.3; word-break: normal; font-size: 20px; margin: 0; padding: 0;" align="left">Discounts / Promotions / Gift Certificates</h6>
+                        </tr></table><br /><!--START: discount_block--><h6 style="color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 1.3; word-break: normal; font-size: 20px; margin: 0; padding: 0;" align="left">Discounts / Promotions / Gift Certificates</h6>
                     <hr style="min-height: 1px; color: #e9e8e6; width: 100%; height: 1px; background: #e9e8e6; border: 0 none;" /><!--START: discounts--><table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 17px; font-size: 12px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
                                 [promotion_name] - [discount_amount]<br /></td>
                             <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 17px; font-size: 12px; margin: 0; padding: 0;" align="left" valign="top"></td>

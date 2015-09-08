@@ -71,13 +71,14 @@
 <div id="mainContainer">
   <header>
     <div class="wrapper">
-      <div id="logo"><a href="/" title="[store_name]"><img src="/assets/images/logo.png" alt="Oak&Barrel"><!--START: global_header-->
+      <div id="logo"><a href="/" title="[store_name]"><img src="/assets/images/logo.png" alt="Oak&Barrel"></a></div><!--START: global_header-->
         <div class="store-txt">
+          <a href="/" title="[store_name]">
           <h1 class="store-name">[storename]</h1>
           <h3 class="store-slogan">[storeslogan]</h3>
+          </a>
         </div>
-        <div class="clear"></div>
-        <!--END: global_header--></a></div>
+        <!--END: global_header-->
         <div id="cart-area">
           <div class="shop">
             <div class="right">
@@ -107,11 +108,21 @@
 		<li>
 			<!--START: CATEGORY_FORMAT-->
 			<a href="view_category.asp?cat=CATID" class="cat">CATEGORY</a>
+			<ul id="menulstCATID" class="subMenu">
+			<script type="text/javascript">
+			var catID = CATID;
+			var menu = "#menulst"+catID;
+			if (typeof menuDone === "undefined") {
+				var menuDone = new Array();
+			}
+			if (menuDone.indexOf(catID) == -1) {
 			<!--END: CATEGORY_FORMAT-->
-			<ul class="subMenu">
 			<!--START: SUB_CATEGORY_FORMAT-->
-				<li><a href="view_category.asp?cat=CATID" class="subcat">CATEGORY</a></li>
+				$(menu).append('<li><a href="view_category.asp?cat=CATID" class="subcat">CATEGORY</a></li>');
 			<!--END: SUB_CATEGORY_FORMAT-->
+				menuDone.push(catID);
+			}
+			</script>
 			</ul>
 		</li>
 		<!--END: CATEGORIES--> 

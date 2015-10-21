@@ -1,0 +1,63 @@
+[ofirstname] [olastname],
+
+The status of your order has been updated to 'Collected from warehouse'.
+Please contact us if you have any further questions.
+
+[store_name].
+
+____________________________________________________________________ 
+Order Information
+
+Order Number: [invoicenum_prefix][invoicenum]
+Order Date (mm/dd/yyyy): [odate]
+Payment Type: [opaymethod]
+Order amount: [orderamount]
+
+Phone: [ophone]
+E-mail: [oemail]
+
+Your billing information is:
+[ofirstname] [olastname] [ocompany]
+[oaddress] [oaddress2]
+Singapore [ozip]
+
+Order Summary
+<!--START: shipment-->_____________________________________________________________________
+Shipping to: N/A
+Shipping Method: [oshipmethod]
+<!--START: product-->
+[itemname] [extra_field_2] [unitprice] X [numitems]  = [itemsubtotal]
+<!--END: product--><!--START: edownload--><a href="[store_url]/order_eproduct.asp?action=edownload&eid=[orderkey]">Click Here to download</a>
+or go to this link [store_url]/order_eproduct.asp?action=edownload&eid=[orderkey]<!--END: edownload-->
+_____________________________________________________________________
+Subtotal: [osubtotal]
+Discount: [totaldiscounts]
+Shipping: [oshipcost]
+Total: [orderamount]
+_____________________________________________________________________
+<!--START: discount_block-->Discounts / Promotions / Gift Certificates
+<!--START: discounts-->- [promotion_name] - [discount_amount]
+<!--END: discounts--><!--END: discount_block-->
+_____________________________________________________________________
+Additional Information
+<!--START: ocomment-->Comments
+[ocomment]<!--END: ocomment-->
+<!--START: checkoutquestions_block-->Checkout Questions
+<!--START: checkoutquestions1-->
+<!--START: question1-->
+[question]:  [answer] 
+<!--END: question1-->
+<!--END: checkoutquestions1--> 
+<!--START: checkoutquestions2-->
+<!--START: question2-->
+[question]:  [answer] 
+<!--END: question2-->
+<!--END: checkoutquestions2--> 
+<!--START: checkoutquestions3-->
+<!--START: question3-->
+[question]:  [answer] 
+<!--END: question3-->
+<!--END: checkoutquestions3--> <!--END: checkoutquestions_block-->
+_____________________________________________________________________
+[store_name]  	  [address1] [address2] Singapore [zip] 
+[store_url]  	  Phone: [phone1]

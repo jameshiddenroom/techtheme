@@ -1,0 +1,240 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>[store_name]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<body>
+<table width="620" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="40" rowspan="6"></td>
+    <td colspan="2"><!--START: invoicelogo-->
+      <img src="[store_url]/[invoicelogo]">
+      <!--END: invoicelogo-->
+    </td>
+    <td valign="bottom"><div align="right">Phone: [phone1]<br>
+        <a href="mailto:[email]">[email]</a></div></td>
+  </tr>
+  <tr>
+    <td colspan="3"><hr color="#000000" size="thin"></td>
+  </tr>
+  <tr>
+    <td height="40" colspan="3"><strong>Order Confirmation</strong></td>
+  </tr>
+  <tr>
+    <td colspan="3"><p>[ofirstname] [olastname],<br>
+        <br>
+        This email confirms that your order was received at [store_name]. You will receive an additional email once your order is shipped.  Contact us if you have any questions about your order.<br>
+        <br>
+        Thanks for using [store_name].</p></td>
+  </tr>
+  <tr>
+    <td colspan="3"> </td>
+  </tr>
+  <tr>
+    <td colspan="3"> </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td width="275"><strong>Order Information</strong></td>
+    <td width="30"></td>
+    <td width="275"><strong>Additional Information </strong></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><hr color="#000000" size="thin"></td>
+    <td></td>
+    <td><hr color="#000000" size="thin"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><p><strong>Order number:</strong> [invoicenum_prefix][invoicenum]<br>
+        <strong>Order Date (mm/dd/yyyy):</strong> [odate]<br>
+      </p></td>
+    <td></td>
+    <td valign="top"><!--START: ocomment-->
+      <strong>Comments</strong>:<br>
+      [ocomment]<br>
+      <!--END: ocomment-->
+      <!--START: pass-->
+      <strong>Account Info:</strong><br>
+      Login: [oemail]<br>
+      Pass: [pass]
+      <!--END: pass-->
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td colspan="3"> </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td width="275"><strong>Billing Address</strong></td>
+    <td width="30"></td>
+    <td width="275"><strong>Payment Information</strong></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><hr color="#000000" size="thin"></td>
+    <td></td>
+    <td><hr color="#000000" size="thin"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>[ofirstname] [olastname]<br>
+      <!--START: ocompany-->
+      [ocompany]<br>
+      <!--END: ocompany-->
+      <!--START: oemail-->
+      Email: [oemail]<br>
+      <!--END: oemail-->
+      <!--START: ophone-->
+      Phone: [ophone]<br>
+      <!--END: ophone-->
+      [oaddress] <br>
+      <!--START: oaddress2-->
+      [oaddress2]<br>
+      <!--END: oaddress2-->
+      Singapore [ozip]</td>
+    <td></td>
+    <td valign="top"><p><strong>Payment Method</strong><br />
+        [opaymethod]</p></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td colspan="3"> </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td colspan="3"><strong>Order Summary</strong></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td colspan="3"></td>
+  </tr>
+  <!--START: shipment-->
+  <tr>
+    <td></td>
+    <td colspan="3"><hr color="#000000" size="thin"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td colspan="4"><table width="100%" border="0" cellspacing="0" cellpadding="10">
+        <tr>
+          <td width="70%" valign="top"><strong>Shipping To:</strong> [oshipfirstname] [oshiplastname]
+            <!--START: oshipcompany-->
+            [oshipcompany]
+            <!--END: oshipcompany-->
+            <br>
+            [oshipaddress] [oshipaddress2]<br>Singapore [oshipzip]
+			<!--START: oshippeddate--><br>
+			<strong>Shipped Date</strong>: [oshippeddate]<!--END: oshippeddate-->			 </td>
+          <td width="30%" valign="top"><strong>Shipping Method</strong><br>
+             [oshipmethod]<br>
+            <!--START: trackingcode-->
+            <strong>Tracking Number</strong><br>
+             <a href="[store_url]/shiptracking.asp?trackno=[trackingcode]">[trackingcode]</a>
+            <!--END: trackingcode-->
+          </td>
+        </tr>
+      </table></td>
+  </tr>
+  <!--END: shipment-->
+  <!--START: product-->
+  <tr>
+    <td></td>
+    <td colspan="3"><table width="100%" border="0" cellspacing="0" cellpadding="10">
+        <tr>
+          <td width="55%"><span>[itemname] [extra_field_2]</span></td>
+          <td width="23%"><div align="left">[unitprice] x [numitems] </div></td>
+          <td width="22%"><div align="right"><strong>[itemsubtotal]</strong></div></td>
+        </tr>
+      </table></td>
+  </tr>
+  <!--END: product-->
+  <tr>
+    <td></td>
+    <td colspan="3"><hr color="#000000" size="thin"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td colspan="3"><div align="right"><strong>Subtotal: </strong>[osubtotal]<br>
+        <b>Discount:</b> [totaldiscounts]<br>
+        <b>Shipping:</b> [oshipcost]<br>
+        <b>Total</b> [orderamount] </div></td>
+  </tr>
+  <!--START: discount_block-->
+  <tr>
+    <td></td>
+    <td colspan="3"> </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td colspan="3"><strong>Discounts / Promotions / Gift Certificates</strong></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td colspan="3"><hr color="#000000" size="thin"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td colspan="3"><!--START: discounts-->
+      [promotion_name] - [discount_amount] <br>
+      <!--END: discounts-->
+    </td>
+  </tr>
+  <!--END: discount_block-->
+  <!--START: checkoutquestions_block-->
+  <tr>
+    <td></td>
+    <td colspan="3"> </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td colspan="3"><strong>Checkout Questions</strong></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td colspan="3"><hr color="#000000" size="thin"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td colspan="3"><!--START: checkoutquestions1-->
+      <!--START: question1-->
+      [question]:  [answer] <br />
+      <!--END: question1-->
+      <!--END: checkoutquestions1-->
+      <!--START: checkoutquestions2-->
+      <!--START: question2-->
+      [question]:  [answer] <br />
+      <!--END: question2-->
+      <!--END: checkoutquestions2-->
+      <!--START: checkoutquestions3-->
+      <!--START: question3-->
+      [question]:  [answer] <br />
+      <!--END: question3-->
+      <!--END: checkoutquestions3-->
+    </td>
+  </tr>
+  <!--END: checkoutquestions_block-->
+  <tr>
+    <td></td>
+    <td colspan="3"><hr color="#000000" size="thin"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td colspan="3"><hr color="#000000" size="thin"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td colspan="3"><table width="100%"><tr><td width="30%">
+	[store_name]</td>
+    <td></td>
+    <td width="67%"><div align="right">[address1] [address2] Singapore [zip] <br>
+        Phone: [phone1]</div>
+		</td></tr></table>
+		
+		</td>
+  </tr>
+</table>
+</body>
+</html>

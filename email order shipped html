@@ -422,8 +422,8 @@ background: #CC0000 !important;
                         <table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 17px; font-size: 12px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
                                     <strong>Shipping To</strong><br />
                                     [oshipfirstname] [oshiplastname]<br /><!--START: oshipcompany--><strong>Company:</strong> [oshipcompany]<br /><!--END: oshipcompany-->
-                                    [oshipaddress] [oshipaddress2] [oshipcity],<br />
-                                    [oshipstate] [oshipzip] [oshipcountry]<br /><br /><!--START: oshippeddate--><strong>Shipped Date</strong><br />[oshippeddate]<!--END: oshippeddate-->
+                                    [oshipaddress] [oshipaddress2]<br />
+                                    Singapore [oshipzip]<br /><br /><!--START: oshippeddate--><strong>Shipped Date</strong><br />[oshippeddate]<!--END: oshippeddate-->
                                 </td>
                             </tr></table></td>
                         <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #333; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 17px; font-size: 12px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">

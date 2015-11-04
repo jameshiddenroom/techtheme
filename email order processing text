@@ -9,7 +9,7 @@ ____________________________________________________________________
 Order Information
 
 Order Number: [invoicenum_prefix][invoicenum]
-Order Date: [odate]
+Order Date (mm/dd/yyyy): [odate]
 Payment Type: [opaymethod]
 Order amount: [orderamount]
 
@@ -19,26 +19,26 @@ E-mail: [oemail]
 Your billing information is:
 [ofirstname] [olastname] [ocompany]
 [oaddress] [oaddress2]
-[ocity], [ostate] [ozip] [ocountry]
+Singapore [ozip]
 
 Order Summary
 <!--START: shipment-->_____________________________________________________________________
 Shipping to:
 [oshipfirstname] [oshiplastname] [oshipcompany]
 [oshipaddress] [oshipaddress2]
-[oshipcity], [oshipstate] [oshipzip] [oshipcountry]
+Singapore [oshipzip]
 
 Shipping Method: [oshipmethod]
 <!--START: oshippeddate-->Shipped Date: [oshippeddate]<!--END: oshippeddate-->
 <!--START: trackingcode-->Tracking Number: [trackingcode]<!--END: trackingcode--><!--END: shipment--><!--START: product-->
-[itemname] [extra_field_3] [unitprice] X [numitems]  = [itemsubtotal]
+[itemname] [unitprice] X [numitems]  = [itemsubtotal]
 <!--END: product--><!--START: edownload--><a href="[store_url]/order_eproduct.asp?action=edownload&eid=[orderkey]">Click Here to download</a>
 or go to this link [store_url]/order_eproduct.asp?action=edownload&eid=[orderkey]<!--END: edownload-->
 _____________________________________________________________________
 Subtotal: [osubtotal]
 Discount: [totaldiscounts]
 Shipping: [oshipcost]
-Total (incl GST): [orderamount]
+Total: [orderamount]
 _____________________________________________________________________
 <!--START: discount_block-->Discounts / Promotions / Gift Certificates
 <!--START: discounts-->- [promotion_name] - [discount_amount]
@@ -67,5 +67,5 @@ Pass: [pass]<!--END: pass-->
 <!--END: question3-->
 <!--END: checkoutquestions3--> <!--END: checkoutquestions_block-->
 _____________________________________________________________________
-[store_name]  	  [address1] [address2] [city], [state] [zip] [country]
+[store_name]  	  [address1] [address2] Singapore [zip]
 [store_url]  	  Phone: [phone1]

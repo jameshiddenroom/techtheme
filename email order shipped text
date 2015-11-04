@@ -28,7 +28,7 @@ Order Summary
 Shipping to:
 [oshipfirstname] [oshiplastname] [oshipcompany]
 [oshipaddress] [oshipaddress2]
-[oshipcity], [oshipstate] [oshipzip] [oshipcountry]
+Singapore [oshipzip]
 
 Shipping Method: [oshipmethod]
 <!--START: oshippeddate-->Shipped Date: [oshippeddate]<!--END: oshippeddate-->

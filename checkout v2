@@ -135,19 +135,8 @@ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="assets/templates
       </div>
       <!--START: apply_coupon-->
       <div id="divApplyCoupon">
-        <div class="coupon-header"><a href="javascript:showApplyCoupon();"><i class="icon-down-open"></i> [viewcart_coupon-header]</a></div>
-        <div class="coupon-container">
-          <div class="coupon-field">
-            <input id="coupon" onchange="clearContent(this);" maxlength="30" size="15" value="" name="coupon_code" class="txtBoxStyle" />
-            <input type="button" onclick="applyCoupon(this.form.coupon_code.value);" value="Go!" class="btn" onmouseover="this.className='btn_over'" onmouseout="this.className='btn'" />
-          </div>
-          <div class="clear"></div>
-          <div class="coupon-message">[viewcart_coupon-message]</div>
-        </div>
-        <div name="divInvalidCoupon" id="divInvalidCoupon" style="display:[invalidCouponDisplay]; color:#F00;">[viewcart_coupon-invalid]</div>
-        <div class="coupon-applied">[divCouponApplied]</div>
-      </div>
-      <div class="clear"></div>
+        <div class="coupon-header">If you wish to use a coupon enter it on your <a href="view_cart.asp">Shopping Cart</a></div>
+
       <!--END: apply_coupon--> 
       <!--END: total_template--> 
     </div>
@@ -812,9 +801,9 @@ body {
         <!--START: KLARNA_INVOICE_DE_BLOCK-->
         <div id="afm_banner">
         <input type="checkbox" name="klarna_afm_de_invoice" value="1" />
-        Mit der Ãœbermittlung der fÃ¼r die Abwicklung der gewÃ¤hlten Klarna Zahlungsmethode und einer IdentitÃ¤ts- und 
-        BonitÃ¤tsprÃ¼fung erforderlichen Daten an Klarna bin ich einverstanden. Meine <a href="https://online.klarna.com/consent_de.yaws" target="_blank">Einwilligung</a> kann ich jederzeit mit Wirkung fÃ¼r die Zukunft widerrufen. 
-        Es gelten die AGB des HÃ¤ndlers. </div>
+        Mit der Übermittlung der für die Abwicklung der gewählten Klarna Zahlungsmethode und einer Identitäts- und 
+        Bonitätsprüfung erforderlichen Daten an Klarna bin ich einverstanden. Meine <a href="https://online.klarna.com/consent_de.yaws" target="_blank">Einwilligung</a> kann ich jederzeit mit Wirkung für die Zukunft widerrufen. 
+        Es gelten die AGB des Händlers. </div>
         <!--END: KLARNA_INVOICE_DE_BLOCK-->
         <div class="clear"></div>
     </div>
@@ -878,9 +867,9 @@ body {
         <!--START: KLARNA_ACCOUNT_DE_BLOCK-->
         <div id="afm_banner">
         <input type="checkbox" name="klarna_afm_de_account" value="1" />
-        Mit der Ãœbermittlung der fÃ¼r die Abwicklung der gewÃ¤hlten Klarna Zahlungsmethode und einer IdentitÃ¤ts- und 
-        BonitÃ¤tsprÃ¼fung erforderlichen Daten an Klarna bin ich einverstanden. Meine <a href="https://online.klarna.com/consent_de.yaws" target="_blank">Einwilligung</a> kann ich jederzeit mit Wirkung fÃ¼r die Zukunft widerrufen. 
-        Es gelten die AGB des HÃ¤ndlers. </div>
+        Mit der Übermittlung der für die Abwicklung der gewählten Klarna Zahlungsmethode und einer Identitäts- und 
+        Bonitätsprüfung erforderlichen Daten an Klarna bin ich einverstanden. Meine <a href="https://online.klarna.com/consent_de.yaws" target="_blank">Einwilligung</a> kann ich jederzeit mit Wirkung für die Zukunft widerrufen. 
+        Es gelten die AGB des Händlers. </div>
         <!--END: KLARNA_ACCOUNT_DE_BLOCK--> 
         <!--START: KLARNA_ACCOUNT_NL_BLOCK-->
         <div id="afm_banner"> <img src="assets/templates/common/images/balk_afm3-jpg.jpg" width="320" /> </div>

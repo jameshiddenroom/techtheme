@@ -40,7 +40,32 @@
     <div class="wrapper">         
     <a id="mobileMenu" class="show-mobile"><i class="icon-ellipsis-vert"></i></a>
     <a href="view_cart.asp" id="mobileCart" class="show-mobile"><i class="icon-basket"></i></a>
-    <span class="greeting"><img src="assets/templates/[template]/images/phone.png" alt="">  [store_phone] | <img src="assets/templates/[template]/images/person.png" alt="">  <!--START: login--><a href="myaccount.asp">Login</a><!--END: login--><!--START: username-->Welcome back, <span>[username]</span> <span class="bullet">&bull;</span> <a href="logout.asp">Logout</a><!--END: username-->  | <img src="assets/templates/[template]/images/shopping-cart-white.png" alt="">  <a href="/view_cart.asp">View Cart</a></span>
+    <span class="greeting"><img src="assets/templates/[template]/images/phone.png" alt="">  <a href="#" style="text-decoration: none; color: white" onClick="javascript:makePhoneCall(25241, '92359843');return false;"><span id="numdiv_25241_0" style="">66903256</span></a>
+ 
+<!--delacon tracking code start-->
+<script type="text/javascript">
+var cids = "25241";
+var refStr = escape(document.referrer);
+var dd = document, ll = dd.createElement("script"), ss = dd.getElementsByTagName("script")[0];
+ll.type = "text/javascript"; ll.async = true; ll.src = ("https:" == document.location.protocol ? "https://" : "http://") + "vxml4.plavxml.com/sited/ref/phonenum.jsp?m_id=529&cids=" + cids + "&ref=" + refStr;
+ss.parentNode.insertBefore(ll,ss);
+ 
+function makePhoneCall(cid, defNum) {
+        var numDivVar = document.getElementById("numdiv_" + cid + "_0");
+        if (numDivVar) {
+                var telno = numDivVar.innerHTML;
+               var tsArray = telno.split(" ");
+               telno = tsArray.join("");
+               location.href = "tel:" + telno;
+        }
+        else {
+               location.href = "tel:" + defNum;
+ 
+        }
+}
+ 
+</script>
+<!--delacon tracking code end--> | <img src="assets/templates/[template]/images/person.png" alt="">  <!--START: login--><a href="myaccount.asp">Login</a><!--END: login--><!--START: username-->Welcome back, <span>[username]</span> <span class="bullet">&bull;</span> <a href="logout.asp">Logout</a><!--END: username-->  | <img src="assets/templates/[template]/images/shopping-cart-white.png" alt="">  <a href="/view_cart.asp">View Cart</a></span>
     <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="showSlideMenu">
       <a id="closeSlideMenu" class="show-mobile"><i class="icon-cancel-circled"></i></a>
       <ul>
@@ -68,6 +93,8 @@
         <div class="clear"></div>
     </div>
 </div>
+
+
 <div id="mainContainer">
   <header>
     <div class="wrapper">
@@ -320,50 +347,19 @@
     <!--END: RIGHT BAR-->
   <div class="clear"></div>
   </div>
-  <footer>
-    <div class="wrapper"> 
-      <div class="ftr-col col1">
-      <!--START: FRAME_LINKS-->
-      <div id="modLinks">
-          <h3>[frame_links]</h3>
-          <ul class="frame-links">
+  <div id="copyright" class="footer">
+    <div class="wrapper">[frame_copyright1]
             <!--START: LINKS--> 
             <!--START: LINK_FORMAT-->
-            <li><a href="infopage.asp?page=[link_id]&extra=1" target="[link_target]" class="menu-bottom">[link_name]</a></li>
+            <a href="infopage.asp?page=[link_id]&extra=1" target="[link_target]" class="menu-bottom">[link_name]</a> 
             <!--END: LINK_FORMAT--> 
             <!--END: LINKS-->
-          </ul>
-      </div>
-      <!--END: FRAME_LINKS--> 
-      </div>
-      <div class="ftr-col col3">
-      <!--START: FRAME_MAILLIST-->
-      <div id="mailistBox">
-        <form method="post" name="mailing" action="mailing_list.asp?action=add" onsubmit="return mailing_list();">
-          <label>[frame_mailinglist]</label>
-          <div class="mailist-box">
-            <input type="text" name="email" value="" placeholder="Email Address" />
-            <input type="submit" name="www" value="[mailinglist_button]" />
-            <div class="clear"></div>
-          </div>
-          <input type="radio" name="subscribe" value="1" checked="checked" />
-          <span class="menu-text">[mailinglist_subscribe]</span>
-          <input type="radio" name="subscribe" value="0" />
-          <span class="menu-text">[mailinglist_unsubscribe]</span>
-          <div class="clear"></div>
-        </form>
-        <div class="clear"></div>
-      </div>
-      <!--END: FRAME_MAILLIST-->
-      <div class="clear"></div> 
-      </div>
-      <div class="clear"></div>
-      <div id="globalFooter" class="footer">[GLOBAL_FOOTER]</div>
-      <div class="clear"></div>     
+<div style="float: right;">
+<!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/sg/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/sg/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/PP_AcceptanceMarkTray-NoDiscover_243x40.png" alt="Buy now with PayPal" /></a></td></tr></table><!-- PayPal Logo -->
+</div>
+<div class="clear"></div>
+
     </div>
-  </footer>
-  <div id="copyright" class="footer">
-    <div class="wrapper">[frame_copyright1]</div>
   </div>   
 </div>
 
@@ -388,6 +384,34 @@ jQuery(document).ready(function () {
     });
 });
 </script>
+<!--START: 3dcart stats-->
+<script type="text/javascript" language="JavaScript">
+ 
+var file='/stats/count.asp';
+var stats_d=new Date(); 
+var stats_s=stats_d.getSeconds(); 
+var stats_m=stats_d.getMinutes();
+var stats_x=stats_s*stats_m;
+var prdID = '[catalogid]';
+var catID = '[catid]';
+stats_f='' + escape(document.referrer); stats_f=stats_f.replace('_','----');
+if (navigator.appName=='Netscape'){stats_b='NS';} 
+if (navigator.appName=='Microsoft Internet Explorer'){stats_b='MSIE';} 
+if (navigator.appVersion.indexOf('MSIE 3')>0) {stats_b='MSIE';}
+stats_u='' + escape(document.URL); stats_u=stats_u.replace('_','----'); stats_w=screen.width; stats_h=screen.height; 
+stats_v=navigator.appName; 
+stats_fs = window.screen.fontSmoothingEnabled;
+if (stats_v != 'Netscape') {stats_c=screen.colorDepth;}
+else {stats_c=screen.pixelDepth;}
+stats_j=navigator.javaEnabled();
+info='w=' + stats_w + '&h=' + stats_h + '&c=' + stats_c + '&r=' + stats_f + '&u='+ stats_u + '&fs=' + stats_fs + '&b=' + stats_b + '&x=' + stats_x + '&cat=' + catID + '&prd=' + prdID;
+document.write('<img src="' + file + '?'+info+ '" width=1 height=1 border=0>');
+</script>
+</a>
+<noscript>
+<img src="/stats/count.asp" width=90 height=30 border=0>
+</noscript>
+<!--END: 3dcart stats-->
 <!-- AddThis Smart Layers BEGIN -->
 <!-- Go to http://www.addthis.com/get/smart-layers to customize -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-5350364935e4f191"></script>

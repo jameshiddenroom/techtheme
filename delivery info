@@ -1,27 +1,19 @@
 <div class="productBlockContainer columns-3">
   <div class="product-container first-item">
-    <div class="product-item item-template-0 alternative"><img src="assets/images/aboutus/express.png" alt="Express Delivery" />
-      <div class="name"><span style="font-weight: bold; font-size: 12pt;">Express</span><br />
-        <br />
-        Delivery same/next business day<br />
-        <br />
-        Order before 10.30am for delivery same/next business day by 6pm<br />
-        <br />
-        <br />
-        </div><span style="font-weight: bold;">Fee:</span> $25<br />
-      minimum order $200 </div></div>
-  <div class="product-container middle-item">
     <div class="product-item item-template-0 alternative"><img src="assets/images/aboutus/standard.png" alt="Standard Delivery" />
-      <div class="name"><span style="font-weight: bold; font-size: 12pt;">Standard</span><br />
+      <div class="name" style="font-weight: bold;"><span style="font-weight: bold; font-size: 12pt;">Standard</span><br />
         <br />
-        Delivery within 2 working days<br />
+        Delivery on next working day<br />
         <br />
-        Order by 3pm and receive your order within 2 working days<br />
+        Order by 3pm and receive your order on the next working day<br />
         <br />
-        Free for orders over $200<br />
+        Free delivery for orders<br />
+	above $200.00<br />
         <br />
-        </div><span style="font-weight: bold;">Fee:</span> $15<br />
-      free for orders above $200 </div></div>
+	A delivery fee of $15.00 is applicable to orders below $200.00
+      </div>
+    </div>
+  </div>
   <div class="product-container last-item">
     <div class="product-item item-template-0 alternative"><img src="assets/images/aboutus/collect.png" alt="Warehouse Collection" />
       <div class="name"><span style="font-weight: bold; font-size: 12pt;">Warehouse Collection</span><br />

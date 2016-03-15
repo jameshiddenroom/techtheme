@@ -1,33 +1,34 @@
 <div class="productBlockContainer columns-3">
   <div class="product-container first-item">
-    <div class="product-item item-template-0 alternative">
-      <img src="assets/images/aboutus/express.png" alt="Express Delivery">
-      <div class="name">
-        <span style="font-weight: bold; font-size: 12pt;">Express</span><br /><br>Delivery same/next business day<br><br>Order before 10.30am for delivery by 6pm same business day<br /><br />Order before 6pm for delivery next business day<br><br>
-      </div>
-      <span style="font-weight: bold;">Fee:</span>&nbsp;$25<br />minimum order $200
-    </div>
-  </div>
+    <div class="product-item item-template-0 alternative"><img src="assets/images/aboutus/express.png" alt="Express Delivery" />
+      <div class="name"><span style="font-weight: bold; font-size: 12pt;">Express</span><br />
+        <br />
+        Delivery same/next business day<br />
+        <br />
+        Order before 10.30am for delivery same/next business day by 6pm<br />
+        <br />
+        <br />
+        </div><span style="font-weight: bold;">Fee:</span> $25<br />
+      minimum order $200 </div></div>
   <div class="product-container middle-item">
-    <div class="product-item item-template-0 alternative">
-      <img src="assets/images/aboutus/standard.png" alt="Standard Delivery">
-      <div class="name">
-        <span style="font-weight: bold; font-size: 12pt;">Standard</span><br /><br />Delivery within 3 working days<br /><br />Order by 3pm and receive your order within 3 working days<br /><br />Free for orders over $200<br /><br />
-      </div>
-      <span style="font-weight: bold;">Fee:</span>&nbsp;$15<br />free for orders above $200
-    </div>
-  </div>
+    <div class="product-item item-template-0 alternative"><img src="assets/images/aboutus/standard.png" alt="Standard Delivery" />
+      <div class="name"><span style="font-weight: bold; font-size: 12pt;">Standard</span><br />
+        <br />
+        Delivery within 2 working days<br />
+        <br />
+        Order by 3pm and receive your order within 2 working days<br />
+        <br />
+        Free for orders over $200<br />
+        <br />
+        </div><span style="font-weight: bold;">Fee:</span> $15<br />
+      free for orders above $200 </div></div>
   <div class="product-container last-item">
-    <div class="product-item item-template-0 alternative">
-      <img src="assets/images/aboutus/collect.png" alt="Warehouse Collection">
-      <div class="name">
-        <span style="font-weight: bold; font-size: 12pt;">Warehouse Collection</span><br /><br />Collect your order at our warehouse for free in as little as 2 hours<br /><br />You will receive an SMS when your order is ready. Prepayment is required. Available Monday - Friday 10am to 4pm<br /><br />
-      </div>
-      <span style="font-weight: bold;">Fee: FREE</span>
-    </div>
-  </div>
-  <div class="clear"></div>
-</div>
-
-<br /><br />
-<div><span style="font-weight: bold; font-size: 14pt;"><table style="width: 100%; border-collapse: collapse;"><tbody><tr><td style="text-align: center; border: 1px none rgb(0, 0, 0); vertical-align: top; letter-spacing: 0px; word-spacing: 0px;"><img src="assets/images/aboutus/express.png" alt="" border="0px"><br><span style="font-weight: bold; font-size: 12pt;">Express</span><br><span style="font-size: 10pt;"><br>Delivery same/next business day<br><br>Order before 10.30am for delivery by 6pm<br>same business day<br>Order before 6pm for delivery<br>next business day<br><br><span style="font-weight: bold;">Fee:</span>&nbsp;$25 (minimum order $200)</span></td><td style="text-align: center; border: 1px none rgb(0, 0, 0); vertical-align: top; letter-spacing: 0px; word-spacing: 0px;"><img src="assets/images/aboutus/standard.png" alt="" border="0px"><br><span style="font-weight: bold; font-size: 12pt;">Standard</span><br><span style="font-size: 10pt;"><br>Delivery within 3 working days<br><br>Order by 3pm and receive your order<br>within 3 working days<br><br><br><br><span style="font-weight: bold;">Fee:</span>&nbsp;$15 (free for orders above $200)</span></td></tr></tbody></table><br></span></div><div><span style="font-weight: bold; font-size: 14pt;"><br></span></div><div><span style="font-weight: bold; font-size: 14pt;">OR free collection from our warehouse.</span></div><div><span style="font-weight: bold;"><table style="width: 100%; border-collapse: collapse;"><tbody><tr><td style="border: 1px none rgb(0, 0, 0); padding: 10px 5px 5px; letter-spacing: 0px; word-spacing: 0px;"><img src="assets/images/aboutus/collect.png" alt="" border="0px"></td><td style="border: 1px none rgb(0, 0, 0); padding: 5px; letter-spacing: 0px; word-spacing: 0px;"><div style="font-size: 12pt;">Collect your order at our warehouse, free, in as little as 2 hours.</div><div>You will receive an SMS when your order is ready. Prepayment is required. Payment on collection is not allowed.</div><div>Available Monday - Friday 10am to 4pm.</div></td></tr></tbody></table><br></span></div><div><br></div>                         
+    <div class="product-item item-template-0 alternative"><img src="assets/images/aboutus/collect.png" alt="Warehouse Collection" />
+      <div class="name"><span style="font-weight: bold; font-size: 12pt;">Warehouse Collection</span><br />
+        <br />
+        Collect your order at our warehouse for free in as little as 2 hours<br />
+        <br />
+        You will receive an SMS when your order is ready. Prepayment is required. Available Monday - Friday 10am to 4pm<br />
+        <br />
+        </div><span style="font-weight: bold;">Fee: FREE</span></div></div>
+  <div class="clear">&nbsp;</div></div>

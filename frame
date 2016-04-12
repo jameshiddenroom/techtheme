@@ -40,7 +40,7 @@
     <div class="wrapper">         
     <a id="mobileMenu" class="show-mobile"><i class="icon-ellipsis-vert"></i></a>
     <a href="view_cart.asp" id="mobileCart" class="show-mobile"><i class="icon-basket"></i></a>
-    <span class="greeting"><img src="assets/templates/[template]/images/phone.png" alt="">  <a href="#" style="text-decoration: none; color: white" onClick="javascript:makePhoneCall(25241, '92359843');return false;"><span id="numdiv_25241_0" style="">66903256</span></a>
+    <span class="greeting"><a href="/about_us.html">About Us</a> | <a href="/crm.asp?action=contactus">Contact Us</a> <img src="assets/templates/[template]/images/phone.png" alt=""> <a href="#" style="text-decoration: none; color: white" onClick="javascript:makePhoneCall(25241, '92359843');return false;"><span id="numdiv_25241_0" style="">66903256</span></a>
  
 <!--delacon tracking code start-->
 <script type="text/javascript">
@@ -65,7 +65,7 @@ function makePhoneCall(cid, defNum) {
 }
  
 </script>
-<!--delacon tracking code end--> | <img src="assets/templates/[template]/images/person.png" alt="">  <!--START: login--><a href="myaccount.asp">Login</a><!--END: login--><!--START: username-->Welcome back, <span>[username]</span> <span class="bullet">&bull;</span> <a href="logout.asp">Logout</a><!--END: username-->  | <img src="assets/templates/[template]/images/shopping-cart-white.png" alt="">  <a href="/view_cart.asp">View Cart</a></span>
+<!--delacon tracking code end--> | <img src="assets/templates/[template]/images/person.png" alt="">  <!--START: login--><a href="myaccount.asp">Login</a><!--END: login--><!--START: username-->Welcome back, <span>[username]</span> <span class="bullet">&bull;</span> <a href="logout.asp">Logout</a><!--END: username-->  | <a href="/myaccount.asp">My Account</a></span>
     <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="showSlideMenu">
       <a id="closeSlideMenu" class="show-mobile"><i class="icon-cancel-circled"></i></a>
       <ul>
@@ -98,13 +98,9 @@ function makePhoneCall(cid, defNum) {
 <div id="mainContainer">
   <header>
     <div class="wrapper">
-      <div id="logo"><a href="/" title="[store_name]"><img src="/assets/images/logo.png" alt="Oak&Barrel"></a></div><!--START: global_header-->
+      <!--START: global_header--><div id="logo"><a href="/" title="[store_name]"><img src="/assets/images/logo2.png" alt="Oak&Barrel"></a></div>
         <div class="store-txt">
-          <a href="/" title="[store_name]">
-          <h1 class="store-name">[storename]</h1>
-          <h3 class="store-slogan">[storeslogan]</h3>
-          </a>
-        </div>
+       </div>
         <!--END: global_header-->
         <div id="cart-area">
           <div class="shop">
@@ -136,20 +132,10 @@ function makePhoneCall(cid, defNum) {
 			<!--START: CATEGORY_FORMAT-->
 			<a href="view_category.asp?cat=CATID" class="cat">CATEGORY</a>
 			<ul id="menulstCATID" class="subMenu">
-			<script type="text/javascript">
-			var catID = CATID;
-			var menu = "#menulst"+catID;
-			if (typeof menuDone === "undefined") {
-				var menuDone = new Array();
-			}
-			if (menuDone.indexOf(catID) == -1) {
 			<!--END: CATEGORY_FORMAT-->
 			<!--START: SUB_CATEGORY_FORMAT-->
-				$(menu).append('<li><a href="view_category.asp?cat=CATID" class="subcat">CATEGORY</a></li>');
+				<li><a href="view_category.asp?cat=CATID" class="subcat">CATEGORY</a></li>
 			<!--END: SUB_CATEGORY_FORMAT-->
-				menuDone.push(catID);
-			}
-			</script>
 			</ul>
 		</li>
 		<!--END: CATEGORIES--> 
@@ -168,6 +154,15 @@ function makePhoneCall(cid, defNum) {
     <aside id="leftBar" class="leftBar">
       <div class="column" id="column1"> 
         <!--START: LEFT_BAR_BLOCKS-->
+
+        <!--START: FRAME_PRICEPROMISE-->
+        <div id="modPricepromise" class="module">
+          <span class="menu-headers">Our Price Promise</span>
+          <p><a href="price_promise.html">At Oak & Barrel prices are <b>guaranteed below<br />regular retail prices</b>.<br /><br />If you find a product cheaper,<br /><b>we will refund you 2x the difference!</b><br /><br /><span class="promiseterms">Click for terms and conditions.</span></a></p>
+          <div class="clear"></div>
+        </div>
+        <!--END: FRAME_PRICEPROMISE-->         
+
 
         <!--START: FRAME_MAILLIST-->
         <div id="modNewsletter" class="module">

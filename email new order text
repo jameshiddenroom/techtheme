@@ -28,9 +28,12 @@ Shipping to:
 Singapore [oshipzip]
 
 Shipping Method: [oshipmethod]
+
+If you have selected to collect your order from our warehouse, our warehouse address is: 18 Sin Ming Lane #05-09/10 Midview City (S) 573960.
+You will receive an SMS when your order is ready for collection.
 <!--START: oshippeddate-->Shipped Date: [oshippeddate]<!--END: oshippeddate-->
 <!--START: trackingcode-->Tracking Number: [trackingcode]<!--END: trackingcode--><!--END: shipment--><!--START: product-->
-[itemname] [extra_field_2] [unitprice] X [numitems]  = [itemsubtotal]
+[itemname] [extra_field_2] [unitprice] X [numitems]  = [itemsubtotal] [extra_field_10]
 <!--END: product-->
 <!--START: edownload-->
 To download go to this link [store_url]/order_eproduct.asp?action=edownload&eid=[orderkey]
@@ -39,6 +42,7 @@ _____________________________________________________________________
 Subtotal: [osubtotal]
 Discount: [totaldiscounts]
 Shipping: [oshipcost]
+<!--START: STORECREDIT-->Store Credit: -[STORECREDITS]<!--END: STORECREDIT-->
 Total: [orderamount]
 _____________________________________________________________________
 <!--START: discount_block-->Discounts / Promotions / Gift Certificates
